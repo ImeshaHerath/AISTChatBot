@@ -1,0 +1,1579 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BookWorm Boutique</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="static/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="static/icomoon/icomoon.css">
+	<link rel="stylesheet" type="text/css" href="static/css/vendor.css">
+	<link rel="stylesheet" type="text/css" href="static/style.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#header" tabindex="0">
+
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">Chat support</h4>
+                    <p class="chatbox__description--header">Hi. My name is AIST. How can I help you?</p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message...">
+                <button class="chatbox__send--footer send__button">Send</button>
+            </div>
+        </div>
+            <div class="chatbox__button">
+                 <button class="scroll-icon-button">
+                 <img src="{{ url_for('static', filename='images/chatbox-icon.png') }}" width="40px"/>
+                 </button>
+           </div>
+    </div>
+
+          <script>
+                $SCRIPT_ROOT = {{ request.script_root|tojson }};
+          </script>
+          <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+
+	<div id="header-wrap">
+
+		<div class="top-content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="social-links">
+							<ul>
+								<li>
+									<a href="#"><i class="icon icon-facebook"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="icon icon-twitter"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="icon icon-youtube-play"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="icon icon-behance-square"></i></a>
+								</li>
+							</ul>
+						</div><!--social-links-->
+					</div>
+					<div class="col-md-6">
+						<div class="right-element">
+							<a href="#" class="user-account for-buy"><i
+									class="icon icon-user"></i><span>Account</span></a>
+							<a href="#" class="cart for-buy"><i class="icon icon-clipboard"></i><span>Cart:(Rs.0)</span></a>
+
+							<div class="action-menu">
+
+								<div class="search-bar">
+									<a href="#" class="search-button search-toggle" data-selector="#header-wrap">
+										<i class="icon icon-search"></i>
+									</a>
+									<form role="search" method="get" class="search-box">
+										<input class="search-field text search-input" placeholder="Search"
+											type="search">
+									</form>
+								</div>
+							</div>
+
+						</div><!--top-right-->
+					</div>
+
+				</div>
+			</div>
+		</div><!--top-content-->
+
+		<header id="header">
+			<div class="container-fluid">
+				<div class="row">
+
+					<div class="col-md-2">
+						<div class="main-logo">
+							<a href="base.html"><img src="static/images/main-logo.png" alt="logo"></a>
+						</div>
+
+					</div>
+
+					<div class="col-md-10">
+
+						<nav id="navbar">
+							<div class="main-menu stellarnav">
+								<ul class="menu-list">
+									<li class="menu-item active"><a href="#home">Home</a></li>
+									<li class="menu-item"><a href="#featured-books" class="nav-link">Featured</a></li>
+									<li class="menu-item"><a href="#popular-books" class="nav-link">Popular</a></li>
+									<li class="menu-item"><a href="#special-offer" class="nav-link">Offer</a></li>
+									<li class="menu-item"><a href="#latest-blog" class="nav-link">Articles</a></li>
+									<li class="menu-item"><a href="/books" class="nav-link">All Books</a></li>
+									<li class="menu-item"><a href="#download-app" class="nav-link">Download App</a></li>
+								</ul>
+
+								<div class="hamburger">
+									<span class="bar"></span>
+									<span class="bar"></span>
+									<span class="bar"></span>
+								</div>
+
+							</div>
+						</nav>
+
+					</div>
+
+				</div>
+			</div>
+		</header>
+
+	</div><!--header-wrap-->
+
+	<section id="billboard">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+
+					<button class="prev slick-arrow">
+						<i class="icon icon-arrow-left"></i>
+					</button>
+
+					<div class="main-slider pattern-overlay">
+						<div class="slider-item">
+							<div class="banner-content">
+								<h2 class="banner-title">Call Me By Your Name</h2>
+								<p>Call Me by Your Name is the story of a sudden and powerful
+									romance that blossoms between an adolescent boy and a summer guest at
+									his parents' cliff-side mansion on the Italian Riviera.</p>
+								<div class="btn-wrap">
+									<a href="#" class="btn btn-outline-accent btn-accent-arrow">Read More<i
+											class="icon icon-ns-arrow-right"></i></a>
+								</div>
+							</div><!--banner-content-->
+							<img src="static/images/main-banner1.jpg" alt="banner" class="banner-image">
+						</div><!--slider-item-->
+
+						<div class="slider-item">
+							<div class="banner-content">
+								<h2 class="banner-title">Birds gonna be Happy</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero
+									ipsum enim pharetra hac. Urna commodo, lacus ut magna velit eleifend. Amet, quis
+									urna, a eu.</p>
+								<div class="btn-wrap">
+									<a href="#" class="btn btn-outline-accent btn-accent-arrow">Read More<i
+											class="icon icon-ns-arrow-right"></i></a>
+								</div>
+							</div><!--banner-content-->
+							<img src="static/images/main-banner2.jpg" alt="banner" class="banner-image">
+						</div><!--slider-item-->
+
+					</div><!--slider-->
+
+					<button class="next slick-arrow">
+						<i class="icon icon-arrow-right"></i>
+					</button>
+
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section id="client-holder" data-aos="fade-up">
+		<div class="container">
+			<div class="row">
+				<div class="inner-content">
+					<div class="logo-wrap">
+						<div class="grid">
+							<a href="#"><img src="static/images/client-image1.png" alt="client"></a>
+							<a href="#"><img src="static/images/client-image2.png" alt="client"></a>
+							<a href="#"><img src="static/images/client-image3.png" alt="client"></a>
+							<a href="#"><img src="static/images/client-image4.png" alt="client"></a>
+							<a href="#"><img src="static/images/client-image5.png" alt="client"></a>
+						</div>
+					</div><!--image-holder-->
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="featured-books" class="py-5 my-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+
+					<div class="section-header align-center">
+						<div class="title">
+							<span>Some quality items</span>
+						</div>
+						<h2 class="section-title">Featured Books</h2>
+					</div>
+
+					<div class="product-list" data-aos="fade-up">
+						<div class="row">
+
+							<div class="col-md-3">
+								<div class="product-item">
+									<figure class="product-style">
+										<img src="static/images/product-item1.jpeg" alt="Books" class="product-item">
+										<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+											Cart</button>
+									</figure>
+									<figcaption>
+										<h3>Anne of Green Gables</h3>
+										<span>L. M. Montgomery</span>
+										<div class="item-price">Rs. 2100.00</div>
+									</figcaption>
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="product-item">
+									<figure class="product-style">
+										<img src="static/images/product-item2.jpg" alt="Books" class="product-item">
+										<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+											Cart</button>
+									</figure>
+									<figcaption>
+										<h3>Circe</h3>
+										<span>Madeline Miller</span>
+										<div class="item-price">Rs. 2100.00</div>
+									</figcaption>
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="product-item">
+									<figure class="product-style">
+										<img src="static/images/product-item3.jpeg" alt="Books" class="product-item">
+										<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+											Cart</button>
+									</figure>
+									<figcaption>
+										<h3>It Ends with Us</h3>
+										<span>Colleen Hoover</span>
+										<div class="item-price">Rs. 2100.00</div>
+									</figcaption>
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="product-item">
+									<figure class="product-style">
+										<img src="static/images/product-item4.jpg" alt="Books" class="product-item">
+										<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+											Cart</button>
+									</figure>
+									<figcaption>
+										<h3>Once upon a time</h3>
+										<span>Klien Marry</span>
+										<div class="item-price">Rs. 2100.00</div>
+									</figcaption>
+								</div>
+							</div>
+
+						</div><!--ft-books-slider-->
+					</div><!--grid-->
+
+
+				</div><!--inner-content-->
+			</div>
+
+				<div class="row">
+
+						<div class="btn-wrap align-center">
+							<a href="/books" class="btn btn-outline-accent btn-accent-arrow" tabindex="0">View All Products<i
+									class="icon icon-ns-arrow-right"></i></a>
+						</div>
+					</div>
+
+		</div>
+	</section>
+
+	<section id="best-selling" class="leaf-pattern-overlay">
+		<div class="corner-pattern-overlay"></div>
+		<div class="container">
+			<div class="row justify-content-center">
+
+				<div class="col-md-8">
+
+					<div class="row">
+
+						<div class="col-md-6">
+							<figure class="products-thumb">
+								<img src="static/images/main-banner2.jpg" alt="book" class="single-image">
+							</figure>
+						</div>
+
+						<div class="col-md-6">
+							<div class="product-entry">
+								<h2 class="section-title divider">Best Selling Book</h2>
+
+								<div class="products-content">
+									<div class="author-name">By Ashley Audrain</div>
+									<h3 class="item-title">The Whispers</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet,
+										libero ipsum enim pharetra hac.</p>
+									<div class="item-price">Rs. 3000.00</div>
+									<div class="btn-wrap">
+										<a href="#" class="btn-accent-arrow">shop it now <i
+												class="icon icon-ns-arrow-right"></i></a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+					<!-- / row -->
+
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section id="popular-books" class="bookshelf py-5 my-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+
+					<div class="section-header align-center">
+						<div class="title">
+							<span>Some quality items</span>
+						</div>
+						<h2 class="section-title">Popular Books</h2>
+					</div>
+
+					<ul class="tabs">
+						<li data-tab-target="#all-genre" class="active tab">All Genre</li>
+						<li data-tab-target="#business" class="tab">Business</li>
+						<li data-tab-target="#technology" class="tab">Technology</li>
+						<li data-tab-target="#romantic" class="tab">Romantic</li>
+						<li data-tab-target="#adventure" class="tab">Adventure</li>
+						<li data-tab-target="#fictional" class="tab">Fictional</li>
+					</ul>
+
+					<div class="tab-content">
+						<div id="all-genre" data-tab-content class="active">
+							<div class="row">
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="static/images/heartstopper1.jpeg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
+										</figure>
+										<figcaption>
+											<h3>Heartstopper Volume 1</h3>
+											<span>Alice Oseman</span>
+											<div class="item-price">Rs. 4900.00</div>
+										</figcaption>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="static/images/The Cruel Prince.jpeg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
+										</figure>
+										<figcaption>
+											<h3>The Cruel Prince</h3>
+											<span>Holly Black</span>
+											<div class="item-price">Rs. 3500.00</div>
+										</figcaption>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="static/images/The-Wicked-King.jpeg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
+										</figure>
+										<figcaption>
+											<h3>The Wicked King</h3>
+											<span>Holly Black</span>
+											<div class="item-price">Rs. 3500.00</div>
+										</figcaption>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="static/images/silence.jpg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
+										</figure>
+										<figcaption>
+											<h3>Silence</h3>
+											<span>Becca Fitzpatrick</span>
+											<div class="item-price">Rs. 3800.00</div>
+										</figcaption>
+									</div>
+								</div>
+
+							</div>
+							<div class="row">
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="static/images/LittleWomen.jpeg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
+										</figure>
+										<figcaption>
+											<h3>Little Women</h3>
+											<span>Louisa May Alcott</span>
+											<div class="item-price">Rs. 2100.00</div>
+										</figcaption>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="static/images/It-Starts-With-Us.jpeg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
+										</figure>
+										<figcaption>
+											<h3>It Starts with Us</h3>
+											<span>Colleen Hoover</span>
+											<div class="item-price">Rs. 2100.00</div>
+										</figcaption>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="static/images/product-item3.jpeg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
+										</figure>
+										<figcaption>
+											<h3>It Ends with Us</h3>
+											<span>Colleen Hoover</span>
+											<div class="item-price">Rs. 2100.00</div>
+										</figcaption>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="static/images/TheSecretGarden.jpeg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
+										</figure>
+										<figcaption>
+											<h3>The Secret Garden</h3>
+											<span>Frances Hodgson Burnett</span>
+											<div class="item-price">Rs. 2100.00</div>
+										</figcaption>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+						<div id="business" data-tab-content>
+							<div class="row">
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="static/images/zerotoone.png" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
+										</figure>
+										<figcaption>
+											<h3>Zero to One</h3>
+											<span>Blake Masters and Peter Thiel</span>
+											<div class="item-price">Rs. 3000.00</div>
+										</figcaption>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="static/images/The-Blind-Side-of-Business.webp" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
+										</figure>
+										<figcaption>
+											<h3>The-Blind-Side-of-Business</h3>
+											<span>Michael Lewis</span>
+											<div class="item-price">Rs. 3500.00</div>
+										</figcaption>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="static/images/richdadpoordad.jpg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
+										</figure>
+										<figcaption>
+											<h3>Rich Dad Poor Dad</h3>
+											<span>Robert Kiyosaki and Sharon Lechter</span>
+											<div class="item-price">Rs. 2000.00</div>
+										</figcaption>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="static/images/The-First-90-Days.jpg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
+										</figure>
+										<figcaption>
+											<h3>The First 90 Days</h3>
+											<span>Michael D. Watkins</span>
+											<div class="item-price">Rs. 2000.00</div>
+										</figcaption>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div id="technology" data-tab-content>
+							<div class="row">
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="static/images/BadBlood.jpg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
+										</figure>
+										<figcaption>
+											<h3>Bad blood</h3>
+											<span>John Carreyrou</span>
+											<div class="item-price">Rs. 4000.00</div>
+										</figcaption>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="static/images/futurewebp.webp" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
+										</figure>
+										<figcaption>
+											<h3>Great travel at desert</h3>
+											<span>Sanchit Howdy</span>
+											<div class="item-price">Rs. 2100.00</div>
+										</figcaption>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="static/images/1687011774998.jpeg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
+										</figure>
+										<figcaption>
+											<h3>The Age of AI</h3>
+											<span>Henry Kissinger</span>
+											<div class="item-price">Rs. 4000.00</div>
+										</figcaption>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="static/images/SteveJobsjpg.jpg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
+										</figure>
+										<figcaption>
+											<h3>Steve Jobs</h3>
+											<span>Walter Lsaacson</span>
+											<div class="item-price">Rs. 3000.00</div>
+										</figcaption>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="romantic" data-tab-content>
+							<div class="row">
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="static/images/product-item6.jpeg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
+										</figure>
+										<figcaption>
+											<h3>The Love Hypothesis</h3>
+											<span>Ali Hazelwood</span>
+											<div class="item-price">Rs. 2100.00</div>
+										</figcaption>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="static/images/finale.jpeg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
+										</figure>
+										<figcaption>
+											<h3>Finale</h3>
+											<span>Becca Fitzpatrick</span>
+											<div class="item-price">Rs. 3800.00</div>
+										</figcaption>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="static/images/LoveontheBrain.jpeg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
+										</figure>
+										<figcaption>
+											<h3>Love on the Brain</h3>
+											<span>Ali Hazelwood</span>
+											<div class="item-price">Rs. 2100.00</div>
+										</figcaption>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="static/images/thesevenhusbands.jpeg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
+										</figure>
+										<figcaption>
+											<h3>The Seven Husbands of Evelyn Hugo</h3>
+											<span>Taylor Jenkins Reid</span>
+											<div class="item-price">Rs. 2030.00</div>
+										</figcaption>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="adventure" data-tab-content>
+							<div class="row">
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="static/images/silence.jpg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
+										</figure>
+										<figcaption>
+											<h3>Silence</h3>
+											<span>Becca Fitzpatrick</span>
+											<div class="item-price">Rs. 3800.00</div>
+										</figcaption>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="static/images/The Lost Sisters.jpeg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
+										</figure>
+										<figcaption>
+											<h3>The Lost Sisters</h3>
+											<span>Holly Black</span>
+											<div class="item-price">Rs. 3500.00</div>
+										</figcaption>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="fictional" data-tab-content>
+							<div class="row">
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="static/images/Clockwork Angel.jpg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
+										</figure>
+										<figcaption>
+											<h3>Clockwork Angel</h3>
+											<span>Cassandra Clare</span>
+											<div class="item-price">Rs. 3450.00</div>
+										</figcaption>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="static/images/Crescendo.jpg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+												Cart</button>
+										</figure>
+										<figcaption>
+											<h3>Crescendo</h3>
+											<span>Becca Fitzpatrick</span>
+											<div class="item-price">Rs. 3800.00</div>
+										</figcaption>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div><!--inner-tabs-->
+					<div class="row">
+
+						<div class="btn-wrap align-center">
+							<a href="/books" class="btn btn-outline-accent btn-accent-arrow" tabindex="0">View All Products<i
+									class="icon icon-ns-arrow-right"></i></a>
+						</div>
+					</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section id="quotation" class="align-center pb-5 mb-5">
+		<div class="inner-content">
+			<h2 class="section-title divider">Quote of the day</h2>
+			<blockquote data-aos="fade-up">
+				<q>“The more that you read, the more things you will know. The more that you learn, the more places
+					you’ll go.”</q>
+				<div class="author-name">Dr. Seuss</div>
+			</blockquote>
+		</div>
+	</section>
+
+	<section id="special-offer" class="bookshelf pb-5 mb-5">
+
+		<div class="section-header align-center">
+			<div class="title">
+				<span>Grab your opportunity</span>
+			</div>
+			<h2 class="section-title">Books with offer</h2>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="inner-content">
+					<div class="product-list" data-aos="fade-up">
+						<div class="grid product-grid">
+							<div class="product-item">
+								<figure class="product-style">
+									<img src="static/images/product-item7.jpeg" alt="Books" class="product-item">
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+										Cart</button>
+								</figure>
+								<figcaption>
+									<h3>Red White & Royal Blue</h3>
+									<span>Casey McQuiston</span>
+									<div class="item-price">
+										<span class="prev-price">Rs. 2010.00</span>Rs. 1005.00
+									</div>
+                            </div>
+							</figcaption>
+
+							<div class="product-item">
+								<figure class="product-style">
+									<img src="static/images/onelaststop.jpg" alt="Books" class="product-item">
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+										Cart</button>
+								</figure>
+								<figcaption>
+									<h3>One Last Stop</h3>
+									<span>Casey McQuiston</span>
+									<div class="item-price">
+										<span class="prev-price">Rs. 2020.00</span>Rs. 1515.00
+									</div>
+                            </div>
+							</figcaption>
+
+							<div class="product-item">
+								<figure class="product-style">
+									<img src="static/images/Harry Potter and the Chamber of Secrets.jpg" alt="Books" class="product-item">
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+										Cart</button>
+								</figure>
+								<figcaption>
+									<h3>Harry Potter and the Chamber of Secrets</h3>
+									<span>J.K. Rowling</span>
+									<div class="item-price">
+										<span class="prev-price">Rs. 3500.00</span>Rs. 2625.00
+									</div>
+                            </div>
+							</figcaption>
+
+							<div class="product-item">
+								<figure class="product-style">
+									<img src="static/images/Harry Potter and the Prisoner of Azkaban.jpg" alt="Books" class="product-item">
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+										Cart</button>
+								</figure>
+								<figcaption>
+									<h3>Harry Potter and the Prisoner of Azkaban</h3>
+									<span>J.K. Rowling</span>
+									<div class="item-price">
+										<span class="prev-price">Rs. 3500.00</span>Rs. 2625.00
+									</div>
+                            </div>
+							</figcaption>
+
+							<div class="product-item">
+								<figure class="product-style">
+									<img src="static/images/Harry Potter and the Goblet of Fire.jpg" alt="Books" class="product-item">
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+										Cart</button>
+								</figure>
+								<figcaption>
+									<h3>Harry Potter and the Goblet of Fire</h3>
+									<span>J.K. Rowling</span>
+									<div class="item-price">Rs. 3900.00</div>
+								</figcaption>
+							</div>
+						</div><!--grid-->
+					</div>
+				</div><!--inner-content-->
+			</div>
+		</div>
+
+        <div class="container">
+			<div class="row">
+				<div class="inner-content">
+					<div class="product-list" data-aos="fade-up">
+						<div class="grid product-grid">
+							<div class="product-item">
+								<figure class="product-style">
+									<img src="static/images/product-item6.jpeg" alt="Books" class="product-item">
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+										Cart</button>
+								</figure>
+								<figcaption>
+									<h3>The Love Hypothesis</h3>
+									<span>Ali Hazelwood</span>
+									<div class="item-price">
+										<span class="prev-price">Rs. 2100.00</span>Get Free Book Mark
+									</div>
+                            </div>
+							</figcaption>
+
+							<div class="product-item">
+								<figure class="product-style">
+									<img src="static/images/LoveontheBrain.jpeg" alt="Books" class="product-item">
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+										Cart</button>
+								</figure>
+								<figcaption>
+									<h3>Love on the Brain</h3>
+									<span>Ali Hazelwood</span>
+									<div class="item-price">
+										<span class="prev-price">Rs. 2100.00</span>Get Free Book Mark
+									</div>
+                            </div>
+							</figcaption>
+
+							<div class="product-item">
+								<figure class="product-style">
+									<img src="static/images/main-banner1.jpg" alt="Books" class="product-item">
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+										Cart</button>
+								</figure>
+								<figcaption>
+									<h3>Call Me by Your Name</h3>
+									<span>Andre Aciman</span>
+									<div class="item-price">
+										<span class="prev-price">Rs. 2000.00</span>Buy 1 and Get 1
+									</div>
+                            </div>
+							</figcaption>
+
+							<div class="product-item">
+								<figure class="product-style">
+									<img src="static/images/Queen of Air and Darkness.jpg" alt="Books" class="product-item">
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+										Cart</button>
+								</figure>
+								<figcaption>
+									<h3>Queen of Air and Darkness</h3>
+									<span>Cassandra Clare</span>
+									<div class="item-price">
+										<span class="prev-price">Rs. 3450.00</span>Free tote-bag
+									</div>
+                            </div>
+							</figcaption>
+
+							<div class="product-item">
+								<figure class="product-style">
+									<img src="static/images/Harry Potter and the Goblet of Fire.jpg" alt="Books" class="product-item">
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+										Cart</button>
+								</figure>
+								<figcaption>
+									<h3>Harry Potter and the Goblet of Fire</h3>
+									<span>J.K. Rowling</span>
+									<div class="item-price">Rs. 3900.00</div>
+								</figcaption>
+							</div>
+						</div><!--grid-->
+					</div>
+				</div><!--inner-content-->
+			</div>
+		</div>
+
+        <div class="container">
+			<div class="row">
+				<div class="inner-content">
+					<div class="product-list" data-aos="fade-up">
+						<div class="grid product-grid">
+							<div class="product-item">
+								<figure class="product-style">
+									<img src="static/images/product-item3.jpeg" alt="Books" class="product-item">
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+										Cart</button>
+								</figure>
+								<figcaption>
+									<h3>It Ends with Us</h3>
+									<span>Colleen Hoover</span>
+									<div class="item-price">
+										<span class="prev-price">Rs. 2100.00</span>Get Free Book Mark
+									</div>
+                            </div>
+							</figcaption>
+
+							<div class="product-item">
+								<figure class="product-style">
+									<img src="static/images/TheSpanishLoveDeception.jpg" alt="Books" class="product-item">
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+										Cart</button>
+								</figure>
+								<figcaption>
+									<h3>The Spanish Love Deception</h3>
+									<span>Elena Armas</span>
+									<div class="item-price">
+										<span class="prev-price">Rs. 2100.00</span>Get Free Book Mark
+									</div>
+                            </div>
+							</figcaption>
+
+							<div class="product-item">
+								<figure class="product-style">
+									<img src="static/images/TheSecretGarden.jpeg" alt="Books" class="product-item">
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+										Cart</button>
+								</figure>
+								<figcaption>
+									<h3>The Secret Garden</h3>
+									<span>Frances Hodgson Burnett</span>
+									<div class="item-price">
+										<span class="prev-price">Rs. 2100.00</span>Buy 1 and Get 1
+									</div>
+                            </div>
+							</figcaption>
+
+							<div class="product-item">
+								<figure class="product-style">
+									<img src="static/images/The Cruel Prince.jpeg" alt="Books" class="product-item">
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+										Cart</button>
+								</figure>
+								<figcaption>
+									<h3>The Cruel Prince</h3>
+									<span>Holly Black</span>
+									<div class="item-price">
+										<span class="prev-price">Rs. 3500.00</span>Free tote-bag
+									</div>
+                            </div>
+							</figcaption>
+
+							<div class="product-item">
+								<figure class="product-style">
+									<img src="static/images/Harry Potter and the Goblet of Fire.jpg" alt="Books" class="product-item">
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+										Cart</button>
+								</figure>
+								<figcaption>
+									<h3>Harry Potter and the Goblet of Fire</h3>
+									<span>J.K. Rowling</span>
+									<div class="item-price">Rs. 3900.00</div>
+								</figcaption>
+							</div>
+						</div><!--grid-->
+					</div>
+				</div><!--inner-content-->
+			</div>
+		</div>
+
+        <div class="container">
+			<div class="row">
+				<div class="inner-content">
+					<div class="product-list" data-aos="fade-up">
+						<div class="grid product-grid">
+							<div class="product-item">
+								<figure class="product-style">
+									<img src="static/images/Harry Potter and the Goblet of Fire.jpg" alt="Books" class="product-item">
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+										Cart</button>
+								</figure>
+								<figcaption>
+									<h3>Harry Potter and the Goblet of Fire</h3>
+									<span>J.K.Rowling</span>
+									<div class="item-price">
+										<span class="prev-price">Rs. 3900.00</span>Rs. 2925.00
+									</div>
+                            </div>
+							</figcaption>
+
+							<div class="product-item">
+								<figure class="product-style">
+									<img src="static/images/HP.jpeg" alt="Books" class="product-item">
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+										Cart</button>
+								</figure>
+								<figcaption>
+									<h3>Harry Potter and the Order of the Phoenix</h3>
+									<span>J.K.Rowling</span>
+									<div class="item-price">
+										<span class="prev-price">Rs. 3500.00</span>Rs. 2650.00
+									</div>
+                            </div>
+							</figcaption>
+
+							<div class="product-item">
+								<figure class="product-style">
+									<img src="static/images/pride.jpeg" alt="Books" class="product-item">
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+										Cart</button>
+								</figure>
+								<figcaption>
+									<h3>Pride and Prejudice</h3>
+									<span>Jane Austen</span>
+									<div class="item-price">
+										<span class="prev-price">Rs. 2100.00</span>Buy 1 and Get 1
+									</div>
+                            </div>
+							</figcaption>
+
+							<div class="product-item">
+								<figure class="product-style">
+									<img src="static/images/product-item1.jpeg" alt="Books" class="product-item">
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+										Cart</button>
+								</figure>
+								<figcaption>
+									<h3>Anne of Green Gables</h3>
+									<span>L.M. Montgomery</span>
+									<div class="item-price">
+										<span class="prev-price">Rs. 2100.00</span>Free Book Mark
+									</div>
+                            </div>
+							</figcaption>
+
+							<div class="product-item">
+								<figure class="product-style">
+									<img src="static/images/Harry Potter and the Goblet of Fire.jpg" alt="Books" class="product-item">
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+										Cart</button>
+								</figure>
+								<figcaption>
+									<h3>Harry Potter and the Goblet of Fire</h3>
+									<span>J.K. Rowling</span>
+									<div class="item-price">Rs. 3900.00</div>
+								</figcaption>
+							</div>
+						</div><!--grid-->
+					</div>
+				</div><!--inner-content-->
+			</div>
+		</div>
+
+        <div class="container">
+			<div class="row">
+				<div class="inner-content">
+					<div class="product-list" data-aos="fade-up">
+						<div class="grid product-grid">
+							<div class="product-item">
+								<figure class="product-style">
+									<img src="static/images/LittleWomen.jpeg" alt="Books" class="product-item">
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+										Cart</button>
+								</figure>
+								<figcaption>
+									<h3>Little Women</h3>
+									<span>Louisa May Alcott</span>
+									<div class="item-price">
+										<span class="prev-price">Rs. 2100.00</span>Buy 1 and Get 1
+									</div>
+                            </div>
+							</figcaption>
+
+							<div class="product-item">
+								<figure class="product-style">
+									<img src="static/images/thesevenhusbands.jpeg" alt="Books" class="product-item">
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+										Cart</button>
+								</figure>
+								<figcaption>
+									<h3>The Seven Husbands of Evelyn Hugo</h3>
+									<span>Taylor Jekins Reid</span>
+									<div class="item-price">
+										<span class="prev-price">Rs. 2030.00</span>Rs. 1522.50
+									</div>
+                            </div>
+							</figcaption>
+
+							<div class="product-item">
+								<figure class="product-style">
+									<img src="static/images/zerotoone.png" alt="Books" class="product-item">
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+										Cart</button>
+								</figure>
+								<figcaption>
+									<h3>Zero to One</h3>
+									<span>Peter Thiel</span>
+									<div class="item-price">
+										<span class="prev-price">Rs. 3000.00</span>Rs. 1500.00
+									</div>
+                            </div>
+							</figcaption>
+
+							<div class="product-item">
+								<figure class="product-style">
+									<img src="static/images/BadBlood.jpg" alt="Books" class="product-item">
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+										Cart</button>
+								</figure>
+								<figcaption>
+									<h3>Bad Blood</h3>
+									<span>John Carrayrou</span>
+									<div class="item-price">
+										<span class="prev-price">Rs. 4000.00</span>Rs. 2000.00
+									</div>
+                            </div>
+							</figcaption>
+
+							<div class="product-item">
+								<figure class="product-style">
+									<img src="static/images/Harry Potter and the Goblet of Fire.jpg" alt="Books" class="product-item">
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+										Cart</button>
+								</figure>
+								<figcaption>
+									<h3>Harry Potter and the Goblet of Fire</h3>
+									<span>J.K. Rowling</span>
+									<div class="item-price">Rs. 3900.00</div>
+								</figcaption>
+							</div>
+						</div><!--grid-->
+					</div>
+				</div><!--inner-content-->
+			</div>
+		</div>
+	</section>
+
+	<section id="subscribe">
+		<div class="container">
+			<div class="row justify-content-center">
+
+				<div class="col-md-8">
+					<div class="row">
+
+						<div class="col-md-6">
+
+							<div class="title-element">
+								<h2 class="section-title divider">Subscribe to our newsletter</h2>
+							</div>
+
+						</div>
+						<div class="col-md-6">
+
+							<div class="subscribe-content" data-aos="fade-up">
+								<p>Be the first to know about our latest products, exclusive offers, and exciting updates! Subscribe to our newsletter and join our community of savvy shoppers. Don't miss out – sign up now to stay in the loop with all things new and exciting!.</p>
+								<form id="form">
+									<input type="text" name="email" placeholder="Enter your email addresss here">
+									<button class="btn-subscribe">
+										<span>send</span>
+										<i class="icon icon-send"></i>
+									</button>
+								</form>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section id="latest-blog" class="py-5 my-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+
+					<div class="section-header align-center">
+						<div class="title">
+							<span>Read our articles</span>
+						</div>
+						<h2 class="section-title">Latest Articles</h2>
+					</div>
+
+					<div class="row">
+
+						<div class="col-md-4">
+
+							<article class="column" data-aos="fade-up">
+
+								<figure>
+									<a href="#" class="image-hvr-effect">
+										<img src="static/images/post-img1.jpg" alt="post" class="post-image">
+									</a>
+								</figure>
+
+								<div class="post-item">
+									<div class="meta-date">Mar 30, 2021</div>
+									<h3><a href="#">Reading books always makes the moments happy</a></h3>
+
+									<div class="links-element">
+										<div class="categories">inspiration</div>
+										<div class="social-links">
+											<ul>
+												<li>
+													<a href="#"><i class="icon icon-facebook"></i></a>
+												</li>
+												<li>
+													<a href="#"><i class="icon icon-twitter"></i></a>
+												</li>
+												<li>
+													<a href="#"><i class="icon icon-behance-square"></i></a>
+												</li>
+											</ul>
+										</div>
+									</div><!--links-element-->
+
+								</div>
+							</article>
+
+						</div>
+						<div class="col-md-4">
+
+							<article class="column" data-aos="fade-up" data-aos-delay="200">
+								<figure>
+									<a href="#" class="image-hvr-effect">
+										<img src="static/images/post-img2.jpg" alt="post" class="post-image">
+									</a>
+								</figure>
+								<div class="post-item">
+									<div class="meta-date">Mar 29, 2021</div>
+									<h3><a href="#">Reading books always makes the moments happy</a></h3>
+
+									<div class="links-element">
+										<div class="categories">inspiration</div>
+										<div class="social-links">
+											<ul>
+												<li>
+													<a href="#"><i class="icon icon-facebook"></i></a>
+												</li>
+												<li>
+													<a href="#"><i class="icon icon-twitter"></i></a>
+												</li>
+												<li>
+													<a href="#"><i class="icon icon-behance-square"></i></a>
+												</li>
+											</ul>
+										</div>
+									</div><!--links-element-->
+
+								</div>
+							</article>
+
+						</div>
+						<div class="col-md-4">
+
+							<article class="column" data-aos="fade-up" data-aos-delay="400">
+								<figure>
+									<a href="#" class="image-hvr-effect">
+										<img src="static/images/post-img3.jpg" alt="post" class="post-image">
+									</a>
+								</figure>
+								<div class="post-item">
+									<div class="meta-date">Feb 27, 2021</div>
+									<h3><a href="#">Reading books always makes the moments happy</a></h3>
+
+									<div class="links-element">
+										<div class="categories">inspiration</div>
+										<div class="social-links">
+											<ul>
+												<li>
+													<a href="#"><i class="icon icon-facebook"></i></a>
+												</li>
+												<li>
+													<a href="#"><i class="icon icon-twitter"></i></a>
+												</li>
+												<li>
+													<a href="#"><i class="icon icon-behance-square"></i></a>
+												</li>
+											</ul>
+										</div>
+									</div><!--links-element-->
+
+								</div>
+							</article>
+
+						</div>
+
+					</div>
+
+					<div class="row">
+
+						<div class="btn-wrap align-center">
+							<a href="#" class="btn btn-outline-accent btn-accent-arrow" tabindex="0">Read All Articles<i
+									class="icon icon-ns-arrow-right"></i></a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="download-app" class="leaf-pattern-overlay">
+		<div class="corner-pattern-overlay"></div>
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-8">
+					<div class="row">
+
+						<div class="col-md-5">
+							<figure>
+								<img src="static/images/device.png" alt="phone" class="single-image">
+							</figure>
+						</div>
+
+						<div class="col-md-7">
+							<div class="app-info">
+								<h2 class="section-title divider">Download our app now !</h2>
+								<p>Download our app today and embark on a literary journey like never before. Your next great read is just a tap away!</p>
+								<div class="google-app">
+									<img src="static/images/google-play.jpg" alt="google play">
+									<img src="static/images/app-store.jpg" alt="app store">
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-4">
+
+					<div class="footer-item">
+						<div class="company-brand">
+							<img src="static/images/main-logo.png" alt="logo" class="footer-logo">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis sed ptibus liberolectus
+								nonet psryroin. Amet sed lorem posuere sit iaculis amet, ac urna. Adipiscing fames
+								semper erat ac in suspendisse iaculis.</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-md-2">
+
+					<div class="footer-menu">
+						<h5>About Us</h5>
+						<ul class="menu-list">
+							<li class="menu-item">
+								<a href="#">vision</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">articles </a>
+							</li>
+							<li class="menu-item">
+								<a href="#">careers</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">service terms</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">donate</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				<div class="col-md-2">
+
+					<div class="footer-menu">
+						<h5>Discover</h5>
+						<ul class="menu-list">
+							<li class="menu-item">
+								<a href="#">Home</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">Books</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">Authors</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">Subjects</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">Advanced Search</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				<div class="col-md-2">
+
+					<div class="footer-menu">
+						<h5>My account</h5>
+						<ul class="menu-list">
+							<li class="menu-item">
+								<a href="#">Sign In</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">View Cart</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">My Wishtlist</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">Track My Order</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				<div class="col-md-2">
+
+					<div class="footer-menu">
+						<h5>Help</h5>
+						<ul class="menu-list">
+							<li class="menu-item">
+								<a href="#">Help center</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">Report a problem</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">Suggesting edits</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">Contact us</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+
+			</div>
+			<!-- / row -->
+
+		</div>
+	</footer>
+
+	<div id="footer-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+
+					<div class="copyright">
+						<div class="row">
+
+							<div class="col-md-6">
+								<p>© 2023 All rights reserved.</p>
+							</div>
+
+							<div class="col-md-6">
+								<div class="social-links align-right">
+									<ul>
+										<li>
+											<a href="#"><i class="icon icon-facebook"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="icon icon-twitter"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="icon icon-youtube-play"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="icon icon-behance-square"></i></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+					</div><!--grid-->
+
+				</div><!--footer-bottom-content-->
+			</div>
+		</div>
+	</div>
+
+	<script src="static/js/jquery-1.11.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+		crossorigin="anonymous"></script>
+	<script src="static/js/plugins.js"></script>
+	<script src="static/js/script.js"></script>
+
+</body>
+
+</html>

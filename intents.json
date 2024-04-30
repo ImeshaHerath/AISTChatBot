@@ -1,0 +1,2750 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "items",
+      "patterns": [
+        "Which items do you have?",
+        "What kinds of items are there?",
+        "What do you sell?"
+      ],
+      "responses": [
+        "We Sell Books"
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with Paypal?",
+        "Are you cash only?"
+      ],
+      "responses": [
+        "We accept VISA, Mastercard and Paypal",
+        "We accept most major credit cards, and Paypal",
+        "We also take cash on hand-over"
+      ]
+    },
+    {
+      "tag": "delivery",
+      "patterns": [
+        "How long does delivery take?",
+        "How long does shipping take?",
+        "When do I get my delivery?",
+        "Do you take cash on delivery?"
+      ],
+      "responses": [
+        "Delivery takes 2-4 days",
+        "Shipping takes 2-4 days",
+        "Yes, we do accept cash on delivery."
+      ]
+    },
+    {
+      "tag": "wrong_questions",
+      "patterns": [
+        "Do you sell tea?",
+        "Can I order a pizza?",
+        "Do you have the latest iPhone?",
+        "Are you open on Sundays?",
+        "Can you recommend a good restaurant nearby?",
+        "Is it raining today?",
+        "How much is a cup of coffee?",
+        "Can you repair my broken laptop?",
+        "Do you sell gardening tools?",
+        "What's the current stock price of Apple Inc.?",
+        "Can you book a flight for me?",
+        "What's the weather forecast for tomorrow?",
+        "Can you fix my leaking faucet?",
+        "Do you have any vegan food options?",
+        "How much is a gym membership?",
+        "Is this the nearest bus stop?",
+        "Can you recommend a good movie?",
+        "What's the current exchange rate for euros?",
+        "Do you offer spa services?",
+        "Can you check my internet connection?",
+        "Where can I buy a new bicycle?"
+      ],
+      "responses": [
+        "I appreciate your question, but we specialize in books. If you have any book-related queries, please feel free to ask.",
+        "I'm sorry, but we only sell books. How can I assist you with book-related information?",
+        "Our expertise is in books, so if you have any book-related questions or need recommendations, please ask, and I'd be happy to help.",
+        "I'm here to assist with book-related inquiries. Is there anything specific related to books you'd like to know?",
+        "While I can't help with that, if you have any questions about books or need recommendations, please don't hesitate to ask.",
+        "I understand your question, but we're here to provide information and recommendations about books. How can I assist you with your book-related needs?",
+        "I'm sorry, we're a book store, and our expertise is in books. If you have any book-related questions, please ask away!",
+        "I appreciate your question, but our focus is on books. How can I assist you in finding the right book for your interests?",
+        "I'm here to help with all your book-related inquiries. Is there anything specific related to books you'd like to discuss?",
+        "I'm sorry, but we're dedicated to providing information about books. Please feel free to ask any book-related questions you may have.",
+        "I appreciate your curiosity, but we're here to assist with book-related matters. Is there a book or author you'd like to inquire about?",
+        "While we don't handle plumbing issues, we're experts in books. How can I assist you in finding your next great read?",
+        "Our primary focus is on books. If you have any questions about books, please let me know, and I'd be happy to help.",
+        "I understand your question, but our main area of expertise is in books. How can I assist you with your book-related needs?",
+        "I'm here to provide information and recommendations about books. Is there a specific book or author you're interested in?",
+        "I appreciate your question, but we specialize in books. If you have any book-related queries, please feel free to ask.",
+        "I'm sorry, but our focus is on books. If you have any book-related questions or need recommendations, please ask away!",
+        "I understand your question, but our main area of expertise is in books. How can I assist you with your book-related needs?",
+        "I'm here to help with all your book-related inquiries. Is there anything specific related to books you'd like to discuss?",
+        "I appreciate your curiosity, but we're here to assist with book-related matters. Is there a book or author you'd like to inquire about?"
+
+      ]
+    },
+
+    {
+  "tag": "call_me_by_your_name_price",
+  "patterns": [
+    "How much does Call Me by Your Name cost?",
+    "How much is call me by your name?",
+    "Call me by your name price?",
+    "Cost for call me by your name?"
+  ],
+  "responses": [
+    "The price of Call Me by Your Name is 2000 rupees."
+  ]
+},
+        {
+  "tag": "call_me_by_your_name_author",
+  "patterns": [
+    "Call Me by Your Name author?",
+    "who wrote call me by your name?",
+    "Call me by your name writer?",
+    "writer for call me by your name?"
+  ],
+  "responses": [
+    "Andre Aciman"
+  ]
+},
+ {
+  "tag": "call_me_by_your_name_availability",
+  "patterns": [
+    "Is Call me by your name by Andre Aciman available?",
+    "Is call me by your name in by andre aciman stock?",
+    "Can I buy call me by your name?",
+    "Do you sell call me by your name?",
+    "Call me by your name"
+  ],
+  "responses": [
+    "Call me by your name is Available in store"
+  ]
+},
+ {
+  "tag": "call_me_by_your_name_synopsis",
+  "patterns": [
+    "What is call me by your name about?",
+    "call me by your name synopsis?",
+    "what is the call me by your name story?"
+  ],
+  "responses": [
+    "Call me by your name is a A poignant story of love and desire  this novel explores the passionate summer romance between Elio and Oliver."
+  ]
+},
+  {
+  "tag": "call_me_by_your_name_promotion",
+  "patterns": [
+    "Does call me by your name have any promotions?",
+    "Call me by your name promotions?",
+    "Promotions call me by your name?"
+  ],
+  "responses": [
+    "Current promotion : Buy One get One free"
+  ]
+},
+
+
+{
+  "tag": "red_white_and_royal_blue_price",
+"patterns": [
+    "How much does Red,White and Royal Blue cost?",
+    "How much is Red,White and Royal Blue?",
+    "Red,White and Royal Blue price?",
+    "Cost for Red,White and Royal Blue?"
+  ],
+  "responses": [
+    "The price of Red,White and Royal Blue is 2010 rupees."
+  ]
+},
+ {
+  "tag": "red_white_and_royal_blue_availability",
+  "patterns": [
+    "Is Red,White and Royal Blue by Casey McQuiston available?",
+    "Is Red,White and Royal Blue by Casey McQuiston stock?",
+    "Can I buy Red,White and Royal Blue?",
+    "Do you sell Red,White and Royal Blue?",
+    "Red,White and Royal Blue"
+  ],
+  "responses": [
+    "Red,White and Royal Blue is Available in store"
+  ]
+},
+ {
+  "tag": "red_white_and_royal_blue_synopsis",
+  "patterns": [
+    "What is Red,White and Royal Blue about?",
+    "Red,White and Royal Blue synopsis?",
+    "what is the Red,White and Royal Blue story?"
+  ],
+  "responses": [
+    "Red,White and Royal Blue This romantic comedy tells the story of the First Son of the United States and a Prince of Wales who fall in love."
+  ]
+},
+  {
+  "tag": "red_white_and_royal_blue_promotion",
+  "patterns": [
+    "Does Red,White and Royal Blue have any promotions?",
+    "Red,White and Royal Blue promotions?",
+    "Promotions Red,White and Royal Blue?"
+  ],
+  "responses": [
+    "Current promotion : 50% off"
+  ]
+},
+{
+  "tag": "one_last_stop_price",
+ "patterns": [
+    "How much does One last stop cost?",
+    "How much is One last stop ?",
+    "One last stop  price?",
+    "Cost for One last stop ?"
+  ],
+  "responses": [
+    "The price of One last stop  is 2010 rupees."
+  ]
+},
+ {
+  "tag": "one_last_stop_availability",
+  "patterns": [
+    "Is One last stop  by Casey McQuiston available?",
+    "Is One last stop  by Casey McQuiston stock?",
+    "Can I buy One last stop ?",
+    "Do you sell One last stop ?",
+    "One last stop "
+  ],
+  "responses": [
+    "One last stop  is Available in store"
+  ]
+},
+ {
+  "tag": "one_last_stop_synopsis",
+  "patterns": [
+    "What is One last stop  about?",
+    "One last stop  synopsis?",
+    "what is the One last stop  story?"
+  ],
+  "responses": [
+    "One last stop :  A contemporary romance novel featuring August a cynical New Yorker  and Jane  a time-displaced subway girl."
+  ]
+},
+  {
+  "tag": "one_last_stop_promotion",
+  "patterns": [
+    "Does One last stop  have any promotions?",
+    "One last stop  promotions?",
+    "Promotions One last stop?"
+  ],
+  "responses": [
+    "Current promotion : 25% off"
+  ]
+},
+
+
+
+{
+  "tag": "the_seven_husbands_of_evelyn_hugo_price",
+ "patterns": [
+    "How much does The Seven Husbands of Evelyn Hugo cost?",
+    "How much is The Seven Husbands of Evelyn Hugo ?",
+    "The Seven Husbands of Evelyn Hugo price?",
+    "Cost for The Seven Husbands of Evelyn Hugo ?"
+  ],
+  "responses": [
+    "The price of The Seven Husbands of Evelyn Hugo  is 2020 rupees."
+  ]
+},
+ {
+  "tag": "the_seven_husbands_of_evelyn_hugo_availability",
+  "patterns": [
+    "Is The Seven Husbands of Evelyn Hugo available?",
+    "Is The Seven Husbands of Evelyn Hugo stock?",
+    "Can I buy The Seven Husbands of Evelyn Hugo ?",
+    "Do you sell The Seven Husbands of Evelyn Hugo?",
+    "The Seven Husbands of Evelyn Hugo "
+  ],
+  "responses": [
+    "The Seven Husbands of Evelyn Hugo  is Not Available in store"
+  ]
+},
+ {
+  "tag": "the_seven_husbands_of_evelyn_hugo_synopsis",
+  "patterns": [
+    "What is The Seven Husbands of Evelyn Hugo  about?",
+    "The Seven Husbands of Evelyn Hugo  synopsis?",
+    "what is the The Seven Husbands of Evelyn Hugo story?"
+  ],
+  "responses": [
+    "The Seven Husbands of Evelyn Hugo : An engaging novel about the life of Hollywood icon Evelyn Hugo and her tumultuous relationships."
+  ]
+},
+  {
+  "tag": "the_seven_husbands_of_evelyn_hugo_promotion",
+  "patterns": [
+    "Does The Seven Husbands of Evelyn Hugo  have any promotions?",
+    "The Seven Husbands of Evelyn Hugo  promotions?",
+    "Promotions The Seven Husbands of Evelyn Hugo?"
+  ],
+  "responses": [
+    "Current promotion : 25% off"
+  ]
+},
+
+
+{
+  "tag": "heartstopper_volume_1_price",
+ "patterns": [
+    "How much does Heartstopper Volume 1 cost?",
+    "How much is Heartstopper Volume 1 ?",
+    "Heartstopper Volume 1 price?",
+    "Cost for Heartstopper Volume 1 ?"
+  ],
+  "responses": [
+    "The price of Heartstopper Volume 1  is 4900 rupees."
+  ]
+},
+ {
+  "tag": "heartstopper_volume_1_availability",
+  "patterns": [
+    "Is Heartstopper Volume 1 available?",
+    "Is Heartstopper Volume 1 stock?",
+    "Can I buy Heartstopper Volume 1 ?",
+    "Do you sell Heartstopper Volume 1?",
+    "The Heartstopper Volume 1 "
+  ],
+  "responses": [
+    "Heartstopper Volume 1  is Available in store"
+  ]
+},
+ {
+  "tag": "heartstopper_volume_1_synopsis",
+  "patterns": [
+    "What is Heartstopper Volume 1  about?",
+    "Heartstopper Volume 1  synopsis?",
+    "what is the Heartstopper Volume 1 story?"
+  ],
+  "responses": [
+    "Heartstopper Volume 1 : A heartwarming graphic novel that explores the blossoming relationship between Charlie and Nick."
+  ]
+},
+  {
+  "tag": "heartstopper_volume_1_promotion",
+  "patterns": [
+    "Does Heartstopper Volume 1 have any promotions?",
+    "Heartstopper Volume 1 promotions?",
+    "Promotions Heartstopper Volume 1?"
+  ],
+  "responses": [
+    "Current promotion : No promotions"
+  ]
+},
+
+{
+  "tag": "heartstopper_volume_2_price",
+"patterns": [
+    "How much does Heartstopper Volume 2 cost?",
+    "How much is Heartstopper Volume 2 ?",
+    "Heartstopper Volume 2 price?",
+    "Cost for Heartstopper Volume 2 ?"
+  ],
+  "responses": [
+    "The price of Heartstopper Volume 2  is 4900 rupees."
+  ]
+},
+ {
+  "tag": "heartstopper_volume_2_availability",
+  "patterns": [
+    "Is Heartstopper Volume 2 available?",
+    "Is Heartstopper Volume 2 stock?",
+    "Can I buy Heartstopper Volume 2 ?",
+    "Do you sell Heartstopper Volume 2?",
+    "The Heartstopper Volume 2 "
+  ],
+  "responses": [
+    "Heartstopper Volume 2  is Available in store"
+  ]
+},
+ {
+  "tag": "heartstopper_volume_2_synopsis",
+  "patterns": [
+    "What is Heartstopper Volume 2  about?",
+    "Heartstopper Volume 2  synopsis?",
+    "what is the Heartstopper Volume 2 story?"
+  ],
+  "responses": [
+    "Heartstopper Volume 2 : Continuation of the heartwarming graphic novel series exploring the relationship between Charlie and Nick."
+  ]
+},
+  {
+  "tag": "heartstopper_volume_2_promotion",
+  "patterns": [
+    "Does Heartstopper Volume 2 have any promotions?",
+    "Heartstopper Volume 2 promotions?",
+    "Promotions Heartstopper Volume 2?"
+  ],
+  "responses": [
+    "Current promotion : No promotions"
+  ]
+},
+
+{
+  "tag": "heartstopper_volume_3_price",
+"patterns": [
+    "How much does Heartstopper Volume 3 cost?",
+    "How much is Heartstopper Volume 3 ?",
+    "Heartstopper Volume 3 price?",
+    "Cost for Heartstopper Volume 3 ?"
+  ],
+  "responses": [
+    "The price of Heartstopper Volume 3  is 4900 rupees."
+  ]
+},
+ {
+  "tag": "heartstopper_volume_3_availability",
+  "patterns": [
+    "Is Heartstopper Volume 3 available?",
+    "Is Heartstopper Volume 3 stock?",
+    "Can I buy Heartstopper Volume 3 ?",
+    "Do you sell Heartstopper Volume 3?",
+    "The Heartstopper Volume 3 "
+  ],
+  "responses": [
+    "Heartstopper Volume 3  is Available in store"
+  ]
+},
+ {
+  "tag": "heartstopper_volume_3_synopsis",
+  "patterns": [
+    "What is Heartstopper Volume 3  about?",
+    "Heartstopper Volume 3  synopsis?",
+    "what is the Heartstopper Volume 3 story?"
+  ],
+  "responses": [
+    "Heartstopper Volume 3 : The third installment in the series, delving deeper into the lives and emotions of Charlie and Nick."
+  ]
+},
+  {
+  "tag": "heartstopper_volume_3_promotion",
+  "patterns": [
+    "Does Heartstopper Volume 3 have any promotions?",
+    "Heartstopper Volume 3 promotions?",
+    "Promotions Heartstopper Volume 3?"
+  ],
+  "responses": [
+    "Current promotion : No promotions"
+  ]
+},
+
+{
+"tag": "heartstopper_volume_4_price",
+"patterns": [
+    "How much does Heartstopper Volume 4 cost?",
+    "How much is Heartstopper Volume 4 ?",
+    "Heartstopper Volume 4 price?",
+    "Cost for Heartstopper Volume 4 ?"
+  ],
+  "responses": [
+    "The price of Heartstopper Volume 4  is 4900 rupees."
+  ]
+},
+ {
+  "tag": "heartstopper_volume_4_availability",
+  "patterns": [
+    "Is Heartstopper Volume 4 available?",
+    "Is Heartstopper Volume 4 stock?",
+    "Can I buy Heartstopper Volume 4 ?",
+    "Do you sell Heartstopper Volume 4?",
+    "The Heartstopper Volume 4 "
+  ],
+  "responses": [
+    "Heartstopper Volume 4  is Available in store"
+  ]
+},
+ {
+  "tag": "heartstopper_volume_4_synopsis",
+  "patterns": [
+    "What is Heartstopper Volume 4  about?",
+    "Heartstopper Volume 4  synopsis?",
+    "what is the Heartstopper Volume 4 story?"
+  ],
+  "responses": [
+    "Heartstopper Volume 4 : Further exploration of the challenges and joys of Charlie and Nick's evolving relationship."
+  ]
+},
+  {
+  "tag": "heartstopper_volume_4_promotion",
+  "patterns": [
+    "Does Heartstopper Volume 4 have any promotions?",
+    "Heartstopper Volume 4 promotions?",
+    "Promotions Heartstopper Volume 4?"
+  ],
+  "responses": [
+    "Current promotion : No promotions"
+  ]
+},
+{
+  "tag": "heartstopper_volume_5_price",
+"patterns": [
+    "How much does Heartstopper Volume 5 cost?",
+    "How much is Heartstopper Volume 5 ?",
+    "Heartstopper Volume 5 price?",
+    "Cost for Heartstopper Volume 5 ?"
+  ],
+  "responses": [
+    "The price of Heartstopper Volume 5  is 4900 rupees."
+  ]
+},
+ {
+  "tag": "heartstopper_volume_5_availability",
+  "patterns": [
+    "Is Heartstopper Volume 5 available?",
+    "Is Heartstopper Volume 5 stock?",
+    "Can I buy Heartstopper Volume 5 ?",
+    "Do you sell Heartstopper Volume 5?",
+    "The Heartstopper Volume 5 "
+  ],
+  "responses": [
+    "Heartstopper Volume 5  is Available in store"
+  ]
+},
+ {
+  "tag": "heartstopper_volume_5_synopsis",
+  "patterns": [
+    "What is Heartstopper Volume 5  about?",
+    "Heartstopper Volume 5  synopsis?",
+    "what is the Heartstopper Volume 5 story?"
+  ],
+  "responses": [
+    "Heartstopper Volume 5 : The fifth volume in the series, continuing to follow the love story of Charlie and Nick."
+  ]
+},
+  {
+  "tag": "heartstopper_volume_5_promotion",
+  "patterns": [
+    "Does Heartstopper Volume 5 have any promotions?",
+    "Heartstopper Volume 5 promotions?",
+    "Promotions Heartstopper Volume 5?"
+  ],
+  "responses": [
+    "Current promotion : No promotions"
+  ]
+},
+
+
+{
+  "tag": "pride_and_prejudice_price",
+"patterns": [
+    "How much does Pride and Prejudice  cost?",
+    "How much is Pride and Prejudice ?",
+    "Pride and Prejudice price?",
+    "Cost for Pride and Prejudice ?"
+  ],
+  "responses": [
+    "The price of Pride and Prejudice  is 2100 rupees."
+  ]
+},
+ {
+  "tag": "pride_and_prejudice_availability",
+  "patterns": [
+    "Is Pride and Prejudice available?",
+    "Is Pride and Prejudice stock?",
+    "Can I buy Pride and Prejudice ?",
+    "Do you sell Pride and Prejudice?",
+    "The Pride and Prejudice "
+  ],
+  "responses": [
+    "Pride and Prejudice  is Available in store"
+  ]
+},
+ {
+  "tag": "pride_and_prejudice_synopsis",
+  "patterns": [
+    "What is Pride and Prejudice  about?",
+    "Pride and Prejudice  synopsis?",
+    "what is the Pride and Prejudice story?"
+  ],
+  "responses": [
+    "Pride and Prejudice : A classic novel that explores themes of love , class and society through the interactions of Elizabeth Bennet and Mr. Darcy."
+  ]
+},
+  {
+  "tag": "pride_and_prejudice_promotion",
+  "patterns": [
+    "Does Pride and Prejudice have any promotions?",
+    "Pride and Prejudice promotions?",
+    "Promotions Pride and Prejudice?"
+  ],
+  "responses": [
+    "Current promotion : Buy one Get one free"
+  ]
+},
+
+{
+  "tag": "little_women_price",
+"patterns": [
+    "How much does Little women cost?",
+    "How much is Little women ?",
+    "Little women price?",
+    "Cost for Little women ?"
+  ],
+  "responses": [
+    "The price of Little women  is 2100 rupees."
+  ]
+},
+ {
+  "tag": "little_women__availability",
+  "patterns": [
+    "Is Little women available?",
+    "Is Little women stock?",
+    "Can I buy Little women ?",
+    "Do you sell Little women?",
+    "The Little women "
+  ],
+  "responses": [
+    "Little women  is Available in store"
+  ]
+},
+ {
+  "tag": "little_women__synopsis",
+  "patterns": [
+    "What is Little women  about?",
+    "Little women  synopsis?",
+    "what is the Little women story?"
+  ],
+  "responses": [
+    "Little women : A beloved classic that follows the lives of the four March sisters as they navigate the challenges of growing up."
+  ]
+},
+  {
+  "tag": "little_women__promotion",
+  "patterns": [
+    "Does Little women have any promotions?",
+    "Little women promotions?",
+    "Promotions Little women?"
+  ],
+  "responses": [
+    "Current promotion : Buy one Get one free"
+  ]
+},
+
+{
+  "tag": "secret_garden_price",
+"patterns": [
+    "How much does Secret Garden  cost?",
+    "How much is Secret Garden ?",
+    "Secret Garden price?",
+    "Cost for Secret Garden ?"
+  ],
+  "responses": [
+    "The price of Secret Garden  is 2100 rupees."
+  ]
+},
+ {
+  "tag": "secret_garden_availability",
+  "patterns": [
+    "Is Secret Garden available?",
+    "Is Secret Garden stock?",
+    "Can I buy Secret Garden ?",
+    "Do you sell Secret Garden?",
+    "The Secret Garden "
+  ],
+  "responses": [
+    "Secret Garden  is Available in store"
+  ]
+},
+ {
+  "tag": "secret_garden_synopsis",
+  "patterns": [
+    "What is Secret Garden  about?",
+    "Secret Garden  synopsis?",
+    "what is the Secret Garden story?"
+  ],
+  "responses": [
+    "Secret Garden : A timeless children's novel about a young girl who discovers a hidden, neglected garden."
+  ]
+},
+  {
+  "tag": "secret_garden_promotion",
+  "patterns": [
+    "Does Secret Garden have any promotions?",
+    "Secret Garden promotions?",
+    "Promotions Secret Garden?"
+  ],
+  "responses": [
+    "Current promotion : Buy one Get one free"
+  ]
+},
+
+{
+  "tag": "anne_of_green_gables_price",
+"patterns": [
+    "How much does Anne of Green Gables Volume 5 cost?",
+    "How much is Anne of Green Gables ?",
+    "Anne of Green Gables price?",
+    "Cost for Anne of Green Gables ?"
+  ],
+  "responses": [
+    "The price of Anne of Green Gables  is 2100 rupees."
+  ]
+},
+ {
+  "tag": "anne_of_green_gables_availability",
+  "patterns": [
+    "Is Anne of Green Gables available?",
+    "Is Anne of Green Gables stock?",
+    "Can I buy Anne of Green Gables ?",
+    "Do you sell Anne of Green Gables?",
+    "The Anne of Green Gables "
+  ],
+  "responses": [
+    "Anne of Green Gables  is Available in store"
+  ]
+},
+ {
+  "tag": "anne_of_green_gables_synopsis",
+  "patterns": [
+    "What is Anne of Green Gables  about?",
+    "Anne of Green Gables  synopsis?",
+    "what is the Anne of Green Gables story?"
+  ],
+  "responses": [
+    "Anne of Green Gables : The story of Anne Shirley, an imaginative and spirited orphan, who is sent to live with the Cuthberts at Green Gables."
+  ]
+},
+  {
+  "tag": "anne_of_green_gables_promotion",
+  "patterns": [
+    "Does Anne of Green Gables have any promotions?",
+    "Anne of Green Gables promotions?",
+    "Promotions Anne of Green Gables?"
+  ],
+  "responses": [
+    "Current promotion : Get Free Book mark"
+  ]
+},
+{
+  "tag": "the_spanish_love_deception_price",
+"patterns": [
+    "How much does The spanish love deception  cost?",
+    "How much is The spanish love deception ?",
+    "The spanish love deception price?",
+    "Cost for The spanish love deception ?"
+  ],
+  "responses": [
+    "The price of The spanish love deception  is 2100 rupees."
+  ]
+},
+ {
+  "tag": "the_spanish_love_deception_availability",
+  "patterns": [
+    "Is The spanish love deception available?",
+    "Is The spanish love deception stock?",
+    "Can I buy The spanish love deception ?",
+    "Do you sell The spanish love deception?",
+    "The The spanish love deception "
+  ],
+  "responses": [
+    "The spanish love deception  is Available in store"
+  ]
+},
+ {
+  "tag": "the_spanish_love_deception_synopsis",
+  "patterns": [
+    "What is The spanish love deception  about?",
+    "The spanish love deception  synopsis?",
+    "what is the The spanish love deception story?"
+  ],
+  "responses": [
+    "The spanish love deception : A contemporary romance novel about a fake relationship between two friends with humorous and heartwarming moments."
+  ]
+},
+  {
+  "tag": "the_spanish_love_deception_promotion",
+  "patterns": [
+    "Does The spanish love deception have any promotions?",
+    "The spanish love deception promotions?",
+    "Promotions The spanish love deception?"
+  ],
+  "responses": [
+    "Current promotion : Get Free Book mark"
+  ]
+},
+
+{
+  "tag": "the_love_hypothesis_price",
+"patterns": [
+    "How much does The Love hypothesis  cost?",
+    "How much is The Love hypothesis ?",
+    "The Love hypothesis price?",
+    "Cost for The Love hypothesis ?"
+  ],
+  "responses": [
+    "The price of The Love hypothesis  is 2100 rupees."
+  ]
+},
+ {
+  "tag": "the_love_hypothesis_availability",
+  "patterns": [
+    "Is The Love hypothesis available?",
+    "Is The Love hypothesis stock?",
+    "Can I buy The Love hypothesis ?",
+    "Do you sell The Love hypothesis?",
+    "The The Love hypothesis "
+  ],
+  "responses": [
+    "The Love hypothesis  is Available in store"
+  ]
+},
+ {
+  "tag": "the_love_hypothesis_synopsis",
+  "patterns": [
+    "What is The Love hypothesis  about?",
+    "The Love hypothesis  synopsis?",
+    "what is the The Love hypothesis story?"
+  ],
+  "responses": [
+    "The Love hypothesis : A delightful romance novel about a grad student who teams up with a scientist to prove Love on the Brain."
+  ]
+},
+  {
+  "tag": "the_love_hypothesis_promotion",
+  "patterns": [
+    "Does The Love hypothesis have any promotions?",
+    "The Love hypothesis promotions?",
+    "Promotions The Love hypothesis?"
+  ],
+  "responses": [
+    "Current promotion : Get Free Book mark"
+  ]
+},
+
+{
+  "tag": "love_on_the_brain_price",
+"patterns": [
+    "How much does Love on the Brain  cost?",
+    "How much is Love on the Brain ?",
+    "Love on the Brain price?",
+    "Cost for Love on the Brain ?"
+  ],
+  "responses": [
+    "The price of Love on the Brain  is 2100 rupees."
+  ]
+},
+ {
+  "tag": "love_on_the_brain_availability",
+  "patterns": [
+    "Is Love on the Brain available?",
+    "Is Love on the Brain stock?",
+    "Can I buy Love on the Brain ?",
+    "Do you sell Love on the Brain?",
+    "The Love on the Brain "
+  ],
+  "responses": [
+    "Love on the Brain  is Available in store"
+  ]
+},
+ {
+  "tag": "love_on_the_brain_synopsis",
+  "patterns": [
+    "What is Love on the Brain  about?",
+    "Love on the Brain  synopsis?",
+    "what is the Love on the Brain story?"
+  ],
+  "responses": [
+    "Love on the brain : A romance novel that explores the complexities of love and relationships in a university setting. A delightful romance novel about a grad student who teams up with a scientist to prove Love on the Brain."
+  ]
+},
+  {
+  "tag": "love_on_the_brain_promotion",
+  "patterns": [
+    "Does Love on the Brain have any promotions?",
+    "Love on the Brain promotions?",
+    "Promotions Love on the Brain?"
+  ],
+  "responses": [
+    "Current promotion : Get Free Book mark"
+  ]
+},
+{
+  "tag": "it_ends_with_us_price",
+"patterns": [
+    "How much does It Ends with us  cost?",
+    "How much is It Ends with us ?",
+    "It Ends with us price?",
+    "Cost for It Ends with us ?"
+  ],
+  "responses": [
+    "The price of It Ends with us  is 2100 rupees."
+  ]
+},
+ {
+  "tag": "it_ends_with_us_availability",
+  "patterns": [
+    "Is It Ends with us available?",
+    "Is It Ends with us stock?",
+    "Can I buy It Ends with us ?",
+    "Do you sell It Ends with us?",
+    "The It Ends with us "
+  ],
+  "responses": [
+    "It Ends with us  is Available in store"
+  ]
+},
+ {
+  "tag": "it_ends_with_us_synopsis",
+  "patterns": [
+    "What is It Ends with us  about?",
+    "It Ends with us  synopsis?",
+    "what is the It Ends with us story?"
+  ],
+  "responses": [
+    "It Ends with us : A powerful and emotional novel that delves into themes of love, resilience, and difficult choices. A delightful romance novel about a grad student who teams up with a scientist to prove Love on the Brain."
+  ]
+},
+  {
+  "tag": "it_ends_with_us_promotion",
+  "patterns": [
+    "Does It Ends with us have any promotions?",
+    "It Ends with us promotions?",
+    "Promotions It Ends with us?"
+  ],
+  "responses": [
+    "Current promotion : Get Free Book mark"
+  ]
+},
+{
+  "tag": "it_starts_with_us_price",
+"patterns": [
+    "How much does It Starts with us cost?",
+    "How much is It Starts with us ?",
+    "It Starts with us price?",
+    "Cost for It Starts with us ?"
+  ],
+  "responses": [
+    "The price of It Starts with us  is 2100 rupees."
+  ]
+},
+ {
+  "tag": "it_starts_with_us_availability",
+  "patterns": [
+    "Is It Starts with us available?",
+    "Is It Starts with us stock?",
+    "Can I buy It Starts with us ?",
+    "Do you sell It Starts with us?",
+    "The It Starts with us "
+  ],
+  "responses": [
+    "It Starts with us  is Available in store"
+  ]
+},
+ {
+  "tag": "it_starts_with_us_synopsis",
+  "patterns": [
+    "What is It Starts with us  about?",
+    "It Starts with us  synopsis?",
+    "what is the It Starts with us story?"
+  ],
+  "responses": [
+    "It Starts with us : A contemporary romance novel exploring the complexities of relationships and personal growth. A delightful romance novel about a grad student who teams up with a scientist to prove Love on the Brain."
+  ]
+},
+  {
+  "tag": "it_starts_with_us_promotion",
+  "patterns": [
+    "Does It Starts with us have any promotions?",
+    "It Starts with us promotions?",
+    "Promotions It Starts with us?"
+  ],
+  "responses": [
+    "Current promotion : No promotion"
+  ]
+},
+{
+  "tag": "reminders_of_him_price",
+"patterns": [
+    "How much does Reminders of Him  cost?",
+    "How much is Reminders of Him ?",
+    "Reminders of Him price?",
+    "Cost for Reminders of Him ?"
+  ],
+  "responses": [
+    "The price of Reminders of Him  is 2100 rupees."
+  ]
+},
+ {
+  "tag": "reminders_of_him_availability",
+  "patterns": [
+    "Is Reminders of Him available?",
+    "Is Reminders of Him stock?",
+    "Can I buy Reminders of Him ?",
+    "Do you sell Reminders of Him?",
+    "The Reminders of Him "
+  ],
+  "responses": [
+    "Reminders of Him  is Available in store"
+  ]
+},
+ {
+  "tag": "reminders_of_him_synopsis",
+  "patterns": [
+    "What is Reminders of Him  about?",
+    "Reminders of Him  synopsis?",
+    "what is the Reminders of Him story?"
+  ],
+  "responses": [
+    "Reminders of Him : A moving novel about love and loss, where a woman discovers a way to heal and find happiness again. A delightful romance novel about a grad student who teams up with a scientist to prove Love on the Brain."
+  ]
+},
+  {
+  "tag": "reminders_of_him_promotion",
+  "patterns": [
+    "Does Reminders of Him have any promotions?",
+    "Reminders of Him promotions?",
+    "Promotions Reminders of Him?"
+  ],
+  "responses": [
+    "Current promotion : No promotion"
+  ]
+},
+{
+  "tag": "circe_price",
+"patterns": [
+    "How much does Circe  cost?",
+    "How much is Circe ?",
+    "Circe price?",
+    "Cost for Circe ?"
+  ],
+  "responses": [
+    "The price of Circe  is 2100 rupees."
+  ]
+},
+ {
+  "tag": "circe_availability",
+  "patterns": [
+    "Is Circe available?",
+    "Is Circe stock?",
+    "Can I buy Circe ?",
+    "Do you sell Circe?",
+    "The Circe "
+  ],
+  "responses": [
+    "Circe  is Available in store"
+  ]
+},
+ {
+  "tag": "circe_synopsis",
+  "patterns": [
+    "What is Circe  about?",
+    "Circe  synopsis?",
+    "what is the Circe story?"
+  ],
+  "responses": [
+    "Circe : A reimagining of the story of Circe  the enchantress from Greek mythology  with a focus on her journey and transformation. A delightful romance novel about a grad student who teams up with a scientist to prove Love on the Brain."
+  ]
+},
+  {
+  "tag": "circe_promotion",
+  "patterns": [
+    "Does Circe have any promotions?",
+    "Circe promotions?",
+    "Promotions Circe?"
+  ],
+  "responses": [
+    "Current promotion : No promotion"
+  ]
+},
+{
+  "tag": "the_song_of_achilles_price",
+"patterns": [
+    "How much does The song of Achilles  cost?",
+    "How much is The song of Achilles ?",
+    "The song of Achilles price?",
+    "Cost for The song of Achilles ?"
+  ],
+  "responses": [
+    "The price of The song of Achilles  is 2100 rupees."
+  ]
+},
+ {
+  "tag": "the_song_of_achilles_availability",
+  "patterns": [
+    "Is The song of Achilles available?",
+    "Is The song of Achilles stock?",
+    "Can I buy The song of Achilles ?",
+    "Do you sell The song of Achilles?",
+    "The The song of Achilles "
+  ],
+  "responses": [
+    "The song of Achilles  is Available in store"
+  ]
+},
+ {
+  "tag": "the_song_of_achilles_synopsis",
+  "patterns": [
+    "What is The song of Achilles  about?",
+    "The song of Achilles  synopsis?",
+    "what is the The song of Achilles story?"
+  ],
+  "responses": [
+    "The Song of Achilles : An epic novel that explores the legendary love story between Achilles and Patroclus during the Trojan War. A delightful romance novel about a grad student who teams up with a scientist to prove Love on the Brain."
+  ]
+},
+  {
+  "tag": "the_song_of_achilles_promotion",
+  "patterns": [
+    "Does The song of Achilles have any promotions?",
+    "The song of Achilles promotions?",
+    "Promotions The song of Achilles?"
+  ],
+  "responses": [
+    "Current promotion : No promotion"
+  ]
+},
+{
+  "tag": "harry_potter_book_1_price",
+"patterns": [
+    "How much does Harry Potter and the Sorcerer's Stone  cost?",
+    "How much is Harry Potter and the Sorcerer's Stone ?",
+    "Harry Potter and the Sorcerer's Stone price?",
+    "Cost for Harry Potter and the Sorcerer's Stone ?"
+  ],
+  "responses": [
+    "The price of Harry Potter and the Sorcerer's Stone  is 3500 rupees."
+  ]
+},
+ {
+  "tag": "harry_potter_book_1_availability",
+  "patterns": [
+    "Is Harry Potter and the Sorcerer's Stone available?",
+    "Is Harry Potter and the Sorcerer's Stone stock?",
+    "Can I buy Harry Potter and the Sorcerer's Stone ?",
+    "Do you sell Harry Potter and the Sorcerer's Stone?",
+    "The Harry Potter and the Sorcerer's Stone "
+  ],
+  "responses": [
+    "Harry Potter and the Sorcerer's Stone  is Available in store"
+  ]
+},
+ {
+  "tag": "harry_potter_book_1_synopsis",
+  "patterns": [
+    "What is Harry Potter and the Sorcerer's Stone  about?",
+    "Harry Potter and the Sorcerer's Stone  synopsis?",
+    "what is the Harry Potter and the Sorcerer's Stone story?"
+  ],
+  "responses": [
+    "Harry Potter and the Sorcerer's Stone : The first book in the iconic Harry Potter series  where a young wizard discovers his magical abilities and embarks on an epic adventure. A delightful romance novel about a grad student who teams up with a scientist to prove Love on the Brain."
+  ]
+},
+  {
+  "tag": "harry_potter_book_1_promotion",
+  "patterns": [
+    "Does Harry Potter and the Sorcerer's Stone have any promotions?",
+    "Harry Potter and the Sorcerer's Stone promotions?",
+    "Promotions Harry Potter and the Sorcerer's Stone?"
+  ],
+  "responses": [
+    "Current promotion : No promotion"
+  ]
+},
+{
+  "tag": "harry_potter_book_2_price",
+"patterns": [
+    "How much does Harry Potter and the Chamber of Secrets  cost?",
+    "How much is Harry Potter and the Chamber of Secrets ?",
+    "Harry Potter and the Chamber of Secrets price?",
+    "Cost for Harry Potter and the Chamber of Secrets ?"
+  ],
+  "responses": [
+    "The price of Harry Potter and the Chamber of Secrets  is 3500 rupees."
+  ]
+},
+ {
+  "tag": "harry_potter_book_2_availability",
+  "patterns": [
+    "Is Harry Potter and the Chamber of Secrets available?",
+    "Is Harry Potter and the Chamber of Secrets stock?",
+    "Can I buy Harry Potter and the Chamber of Secrets ?",
+    "Do you sell Harry Potter and the Chamber of Secrets?",
+    "The Harry Potter and the Chamber of Secrets "
+  ],
+  "responses": [
+    "Harry Potter and the Chamber of Secrets  is Available in store"
+  ]
+},
+ {
+  "tag": "harry_potter_book_2_synopsis",
+  "patterns": [
+    "What is Harry Potter and the Chamber of Secrets  about?",
+    "Harry Potter and the Chamber of Secrets  synopsis?",
+    "what is the Harry Potter and the Chamber of Secrets story?"
+  ],
+  "responses": [
+    "Harry Potter and the Chamber of Secrets : The second installment in the Harry Potter series  featuring another year of magical adventures at Hogwarts. A delightful romance novel about a grad student who teams up with a scientist to prove Love on the Brain."
+  ]
+},
+  {
+  "tag": "harry_potter_book_2_promotion",
+  "patterns": [
+    "Does Harry Potter and the Chamber of Secrets have any promotions?",
+    "Harry Potter and the Chamber of Secrets promotions?",
+    "Promotions Harry Potter and the Chamber of Secrets?"
+  ],
+  "responses": [
+    "Current promotion : 25% off"
+  ]
+},
+{
+  "tag": "harry_potter_book_3_price",
+"patterns": [
+    "How much does Harry Potter and the Prisoner of Azkaban  cost?",
+    "How much is Harry Potter and the Prisoner of Azkaban ?",
+    "Harry Potter and the Prisoner of Azkaban price?",
+    "Cost for Harry Potter and the Prisoner of Azkaban ?"
+  ],
+  "responses": [
+    "The price of Harry Potter and the Prisoner of Azkaban  is 3500 rupees."
+  ]
+},
+ {
+  "tag": "harry_potter_book_3_availability",
+  "patterns": [
+    "Is Harry Potter and the Prisoner of Azkaban available?",
+    "Is Harry Potter and the Prisoner of Azkaban stock?",
+    "Can I buy Harry Potter and the Prisoner of Azkaban ?",
+    "Do you sell Harry Potter and the Prisoner of Azkaban?",
+    "The Harry Potter and the Prisoner of Azkaban "
+  ],
+  "responses": [
+    "Harry Potter and the Prisoner of Azkaban  is Available in store"
+  ]
+},
+ {
+  "tag": "harry_potter_book_3_synopsis",
+  "patterns": [
+    "What is Harry Potter and the Prisoner of Azkaban  about?",
+    "Harry Potter and the Prisoner of Azkaban  synopsis?",
+    "what is the Harry Potter and the Prisoner of Azkaban story?"
+  ],
+  "responses": [
+    "Harry Potter and the Prisoner of Azkaban : In this third book  Harry faces new challenges  including the escaped prisoner Sirius Black. A delightful romance novel about a grad student who teams up with a scientist to prove Love on the Brain."
+  ]
+},
+  {
+  "tag": "harry_potter_book_3_promotion",
+  "patterns": [
+    "Does Harry Potter and the Prisoner of Azkaban have any promotions?",
+    "Harry Potter and the Prisoner of Azkaban promotions?",
+    "Promotions Harry Potter and the Prisoner of Azkaban?"
+  ],
+  "responses": [
+    "Current promotion : 25% off"
+  ]
+},
+{
+  "tag": "harry_potter_book_4_price",
+"patterns": [
+    "How much does Harry Potter and the Goblet of Fire  cost?",
+    "How much is Harry Potter and the Goblet of Fire ?",
+    "Harry Potter and the Goblet of Fire price?",
+    "Cost for Harry Potter and the Goblet of Fire ?"
+  ],
+  "responses": [
+    "The price of Harry Potter and the Goblet of Fire  is 3500 rupees."
+  ]
+},
+ {
+  "tag": "harry_potter_book_4_availability",
+  "patterns": [
+    "Is Harry Potter and the Goblet of Fire available?",
+    "Is Harry Potter and the Goblet of Fire stock?",
+    "Can I buy Harry Potter and the Goblet of Fire ?",
+    "Do you sell Harry Potter and the Goblet of Fire?",
+    "The Harry Potter and the Goblet of Fire "
+  ],
+  "responses": [
+    "Harry Potter and the Goblet of Fire  is Available in store"
+  ]
+},
+ {
+  "tag": "harry_potter_book_4_synopsis",
+  "patterns": [
+    "What is Harry Potter and the Goblet of Fire  about?",
+    "Harry Potter and the Goblet of Fire  synopsis?",
+    "what is the Harry Potter and the Goblet of Fire story?"
+  ],
+  "responses": [
+    "Harry is unexpectedly entered into the Triwizard Tournament in this thrilling fourth installment.A delightful romance novel about a grad student who teams up with a scientist to prove Love on the Brain."
+  ]
+},
+  {
+  "tag": "harry_potter_book_4_promotion",
+  "patterns": [
+    "Does Harry Potter and the Goblet of Fire have any promotions?",
+    "Harry Potter and the Goblet of Fire promotions?",
+    "Promotions Harry Potter and the Goblet of Fire?"
+  ],
+  "responses": [
+    "Current promotion : 25% off"
+  ]
+},
+{
+  "tag": "harry_potter_book_5_price",
+"patterns": [
+    "How much does Harry Potter and the Order of the Phoenix  cost?",
+    "How much is Harry Potter and the Order of the Phoenix ?",
+    "Harry Potter and the Order of the Phoenix price?",
+    "Cost for Harry Potter and the Order of the Phoenix ?"
+  ],
+  "responses": [
+    "The price of Harry Potter and the Order of the Phoenix  is 3500 rupees."
+  ]
+},
+ {
+  "tag": "harry_potter_book_5_availability",
+  "patterns": [
+    "Is Harry Potter and the Order of the Phoenix available?",
+    "Is Harry Potter and the Order of the Phoenix stock?",
+    "Can I buy Harry Potter and the Order of the Phoenix ?",
+    "Do you sell Harry Potter and the Goblet of Fire?",
+    "The Harry Potter and the Order of the Phoenix "
+  ],
+  "responses": [
+    "Harry Potter and the Order of the Phoenix  is Available in store"
+  ]
+},
+ {
+  "tag": "harry_potter_book_5_synopsis",
+  "patterns": [
+    "What is Harry Potter and the Order of the Phoenix  about?",
+    "Harry Potter and the Order of the Phoenix  synopsis?",
+    "what is the Harry Potter and the Order of the Phoenix story?"
+  ],
+  "responses": [
+   "Harry Potter and the Order of the Phoenix : Harry returns to Hogwarts for his fifth year  facing new challenges and dark forces. Harry is unexpectedly entered into the Triwizard Tournament in this thrilling fourth installment.A delightful romance novel about a grad student who teams up with a scientist to prove Love on the Brain."
+  ]
+},
+  {
+  "tag": "harry_potter_book_5_promotion",
+  "patterns": [
+    "Does Harry Potter and the Order of the Phoenix have any promotions?",
+    "Harry Potter and the Order of the Phoenix promotions?",
+    "Promotions Harry Potter and the Goblet of Fire?"
+  ],
+  "responses": [
+    "Current promotion : 25% off"
+  ]},
+{
+  "tag": "harry_potter_book_6_price",
+"patterns": [
+    "How much does Harry Potter and the Half-Blood Prince  cost?",
+    "How much is Harry Potter and the Half-Blood Prince ?",
+    "Harry Potter and the Half-Blood Prince price?",
+    "Cost for Harry Potter and the Half-Blood Prince ?"
+  ],
+  "responses": [
+    "The price of Harry Potter and the Half-Blood Prince  is 3500 rupees."
+  ]
+},
+ {
+  "tag": "harry_potter_book_6_availability",
+  "patterns": [
+    "Is Harry Potter and the Half-Blood Prince available?",
+    "Is Harry Potter and the Half-Blood Prince stock?",
+    "Can I buy Harry Potter and the Half-Blood Prince ?",
+    "Do you sell Harry Potter and the Half-Blood Prince?",
+    "The Harry Potter and the Half-Blood Prince "
+  ],
+  "responses": [
+    "Harry Potter and the Half-Blood Prince  is Available in store"
+  ]
+},
+ {
+  "tag": "harry_potter_book_6_synopsis",
+  "patterns": [
+    "What is Harry Potter and the Half-Blood Prince  about?",
+    "Harry Potter and the Half-Blood Prince  synopsis?",
+    "what is the Harry Potter and the Half-Blood Prince story?"
+  ],
+  "responses": [
+    "Harry Potter and the Half-Blood Prince : The penultimate book in the series delves into Voldemort's past and sets the stage for the final battle. A delightful romance novel about a grad student who teams up with a scientist to prove Love on the Brain."
+  ]
+},
+  {
+  "tag": "harry_potter_book_6_promotion",
+  "patterns": [
+    "Does Harry Potter and the Half-Blood Prince have any promotions?",
+    "Harry Potter and the Half-Blood Prince promotions?",
+    "Promotions Harry Potter and the Half-Blood Prince?"
+  ],
+  "responses": [
+    "Current promotion : No promotion"
+  ]
+},
+{
+  "tag": "harry_potter_book_7_price",
+"patterns": [
+    "How much does Harry Potter and the Deathly Hallows  cost?",
+    "How much is Harry Potter and the Deathly Hallows ?",
+    "Harry Potter and the Deathly Hallows price?",
+    "Cost for Harry Potter and the Deathly Hallows ?"
+  ],
+  "responses": [
+    "The price of Harry Potter and the Deathly Hallows  is 3500 rupees."
+  ]
+},
+ {
+  "tag": "harry_potter_book_7_availability",
+  "patterns": [
+    "Is Harry Potter and the Deathly Hallows available?",
+    "Is Harry Potter and the Deathly Hallows stock?",
+    "Can I buy Harry Potter and the Deathly Hallows ?",
+    "Do you sell Harry Potter and the Deathly Hallows?",
+    "The Harry Potter and the Deathly Hallows "
+  ],
+  "responses": [
+    "Harry Potter and the Deathly Hallows  is Available in store"
+  ]
+},
+ {
+  "tag": "harry_potter_book_7_synopsis",
+  "patterns": [
+    "What is Harry Potter and the Deathly Hallows  about?",
+    "Harry Potter and the Deathly Hallows  synopsis?",
+    "what is the Harry Potter and the Deathly Hallows story?"
+  ],
+  "responses": [
+    "Harry Potter and the Deathly Hallows : The epic conclusion to the Harry Potter series as Harry,Ron  and Hermione face their ultimate challenges. A delightful romance novel about a grad student who teams up with a scientist to prove Love on the Brain."
+  ]
+},
+  {
+  "tag": "harry_potter_book_7_promotion",
+  "patterns": [
+    "Does Harry Potter and the Deathly Hallows have any promotions?",
+    "Harry Potter and the Deathly Hallows promotions?",
+    "Promotions Harry Potter and the Deathly Hallows?"
+  ],
+  "responses": [
+    "Current promotion : No promotion"
+  ]
+},
+{
+  "tag": "clockwork_angel_price",
+"patterns": [
+    "How much does Clockwork Angel  cost?",
+    "How much is Clockwork Angel ?",
+    "Clockwork Angel price?",
+    "Cost for Clockwork Angel ?"
+  ],
+  "responses": [
+    "The price of Clockwork Angel  is 3450 rupees."
+  ]
+},
+ {
+  "tag": "clockwork_angel_availability",
+  "patterns": [
+    "Is Clockwork Angel available?",
+    "Is Clockwork Angel stock?",
+    "Can I buy Clockwork Angel ?",
+    "Do you sell Clockwork Angel?",
+    "The Clockwork Angel "
+  ],
+  "responses": [
+    "Clockwork Angel  is Available in store"
+  ]
+},
+ {
+  "tag": "clockwork_angel_synopsis",
+  "patterns": [
+    "What is Clockwork Angel  about?",
+    "Clockwork Angel  synopsis?",
+    "what is the Clockwork Angel story?"
+  ],
+  "responses": [
+    "Clockwork Angel : The first book in 'The Infernal Devices' series  set in the shadowhunter world  where a young girl discovers dark secrets. A delightful romance novel about a grad student who teams up with a scientist to prove Love on the Brain."
+  ]
+},
+  {
+  "tag": "clockwork_angel_promotion",
+  "patterns": [
+    "Does Clockwork Angel have any promotions?",
+    "Clockwork Angel promotions?",
+    "Promotions Clockwork Angel?"
+  ],
+  "responses": [
+    "Current promotion : No promotion"
+  ]
+},
+{
+  "tag": "clockwork_prince_price",
+"patterns": [
+    "How much does Clockwork Prince  cost?",
+    "How much is Clockwork Prince ?",
+    "Clockwork Prince price?",
+    "Cost for Clockwork Prince ?"
+  ],
+  "responses": [
+    "The price of Clockwork Prince  is 3450 rupees."
+  ]
+},
+ {
+  "tag": "clockwork_prince_availability",
+  "patterns": [
+    "Is Clockwork Prince available?",
+    "Is Clockwork Prince stock?",
+    "Can I buy Clockwork Prince ?",
+    "Do you sell Clockwork Prince?",
+    "The Clockwork Prince "
+  ],
+  "responses": [
+    "Clockwork Prince  is Available in store"
+  ]
+},
+ {
+  "tag": "clockwork_prince_synopsis",
+  "patterns": [
+    "What is Clockwork Prince  about?",
+    "Clockwork Prince  synopsis?",
+    "what is the Clockwork Prince story?"
+  ],
+  "responses": [
+    "Clockwork Prince : The second book in 'The Infernal Devices' series  continuing the adventures of Tessa,Will and Jem A delightful romance novel about a grad student who teams up with a scientist to prove Love on the Brain."
+  ]
+},
+  {
+  "tag": "clockwork_prince_promotion",
+  "patterns": [
+    "Does Clockwork Prince have any promotions?",
+    "Clockwork Prince promotions?",
+    "Promotions Clockwork Prince?"
+  ],
+  "responses": [
+    "Current promotion : No promotion"
+  ]
+},
+{
+  "tag": "clockwork_princess_price",
+"patterns": [
+    "How much does Clockwork Princess  cost?",
+    "How much is Clockwork Princess ?",
+    "Clockwork Princess price?",
+    "Cost for Clockwork Princess ?"
+  ],
+  "responses": [
+    "The price of Clockwork Princess  is 3450 rupees."
+  ]
+},
+ {
+  "tag": "clockwork_princess_availability",
+  "patterns": [
+    "Is Clockwork Princess available?",
+    "Is Clockwork Princess stock?",
+    "Can I buy Clockwork Princess ?",
+    "Do you sell Clockwork Princess?",
+    "The Clockwork Princess "
+  ],
+  "responses": [
+    "Clockwork Princess  is Available in store"
+  ]
+},
+ {
+  "tag": "clockwork_princess_synopsis",
+  "patterns": [
+    "What is Clockwork Princess  about?",
+    "Clockwork Princess  synopsis?",
+    "what is the Clockwork Princess story?"
+  ],
+  "responses": [
+    "Clockwork Princess : The thrilling conclusion of 'The Infernal Devices' series where mysteries are unraveled and destinies are fulfilled. A delightful romance novel about a grad student who teams up with a scientist to prove Love on the Brain."
+  ]
+},
+  {
+  "tag": "clockwork_princess_promotion",
+  "patterns": [
+    "Does Clockwork Princess have any promotions?",
+    "Clockwork Princess promotions?",
+    "Promotions Clockwork Princess?"
+  ],
+  "responses": [
+    "Current promotion : No promotion"
+  ]
+},
+{
+  "tag": "lady_midnight_price",
+"patterns": [
+    "How much does Lady Midnight  cost?",
+    "How much is Lady Midnight ?",
+    "Lady Midnight price?",
+    "Cost for Lady Midnight ?"
+  ],
+  "responses": [
+    "The price of Lady Midnight  is 3450 rupees."
+  ]
+},
+ {
+  "tag": "lady_midnight_availability",
+  "patterns": [
+    "Is Lady Midnight available?",
+    "Is Lady Midnight stock?",
+    "Can I buy Lady Midnight ?",
+    "Do you sell Lady Midnight?",
+    "The Lady Midnight "
+  ],
+  "responses": [
+    "Lady Midnight  is Not Available in store"
+  ]
+},
+ {
+  "tag": "lady_midnight_synopsis",
+  "patterns": [
+    "What is Lady Midnight  about?",
+    "Lady Midnight  synopsis?",
+    "what is the Lady Midnight story?"
+  ],
+  "responses": [
+    "Lady Midnight : The first book in 'The Dark Artifices' series  following the adventures of Shadowhunters in Los Angeles. A delightful romance novel about a grad student who teams up with a scientist to prove Love on the Brain."
+  ]
+},
+  {
+  "tag": "lady_midnight_promotion",
+  "patterns": [
+    "Does Lady Midnight have any promotions?",
+    "Lady Midnight promotions?",
+    "Promotions Lady Midnight?"
+  ],
+  "responses": [
+    "Current promotion : No promotion"
+  ]
+},
+{
+  "tag": "lord_of_shadows_price",
+"patterns": [
+    "How much does Lord of Shadows  cost?",
+    "How much is Lord of Shadows ?",
+    "Lord of Shadows price?",
+    "Cost for Lord of Shadows ?"
+  ],
+  "responses": [
+    "The price of Lord of Shadows  is 3450 rupees."
+  ]
+},
+ {
+  "tag": "lord_of_shadows_availability",
+  "patterns": [
+    "Is Lord of Shadows available?",
+    "Is Lord of Shadows stock?",
+    "Can I buy Lord of Shadows ?",
+    "Do you sell Lord of Shadows?",
+    "The Lord of Shadows "
+  ],
+  "responses": [
+    "Lord of Shadows  is Not Available in store"
+  ]
+},
+ {
+  "tag": "lord_of_shadows_synopsis",
+  "patterns": [
+    "What is Lord of Shadows  about?",
+    "Lord of Shadows  synopsis?",
+    "what is the Lord of Shadows story?"
+  ],
+  "responses": [
+    "Lord of Shadows : The second book in 'The Dark Artifices' series  where dark secrets and forbidden love take center stage. A delightful romance novel about a grad student who teams up with a scientist to prove Love on the Brain."
+  ]
+},
+  {
+  "tag": "lord_of_shadows_promotion",
+  "patterns": [
+    "Does Lord of Shadows have any promotions?",
+    "Lord of Shadows promotions?",
+    "Promotions Lord of Shadows?"
+  ],
+  "responses": [
+    "Current promotion : No promotion"
+  ]
+},
+{
+  "tag": "queen_of_air_and_darkness_price",
+"patterns": [
+    "How much does Queen of Air and Darkness  cost?",
+    "How much is Queen of Air and Darkness ?",
+    "Queen of Air and Darkness price?",
+    "Cost for Queen of Air and Darkness ?"
+  ],
+  "responses": [
+    "The price of Queen of Air and Darkness  is 3450 rupees."
+  ]
+},
+ {
+  "tag": "queen_of_air_and_darkness_availability",
+  "patterns": [
+    "Is Queen of Air and Darkness available?",
+    "Is Queen of Air and Darkness stock?",
+    "Can I buy Queen of Air and Darkness ?",
+    "Do you sell Queen of Air and Darkness?",
+    "The Queen of Air and Darkness "
+  ],
+  "responses": [
+    "Queen of Air and Darkness  is Available in store"
+  ]
+},
+ {
+  "tag": "queen_of_air_and_darkness_synopsis",
+  "patterns": [
+    "What is Queen of Air and Darkness  about?",
+    "Queen of Air and Darkness  synopsis?",
+    "what is the Queen of Air and Darkness story?"
+  ],
+  "responses": [
+    "Queen of Air and Darkness : The epic conclusion to The Dark Artifices trilogy with battles, love  and the fate of the Shadowhunter world at stake. A delightful romance novel about a grad student who teams up with a scientist to prove Love on the Brain."
+  ]
+},
+  {
+  "tag": "queen_of_air_and_darkness_promotion",
+  "patterns": [
+    "Does Queen of Air and Darkness have any promotions?",
+    "Queen of Air and Darkness promotions?",
+    "Promotions Queen of Air and Darkness?"
+  ],
+  "responses": [
+    "Current promotion : No promotion"
+  ]
+},
+{
+  "tag": "the_cruel_prince_price",
+"patterns": [
+    "How much does The Cruel Prince  cost?",
+    "How much is The Cruel Prince ?",
+    "The Cruel Prince price?",
+    "Cost for The Cruel Prince ?"
+  ],
+  "responses": [
+    "The price of The Cruel Prince  is 3500 rupees."
+  ]
+},
+ {
+  "tag": "the_cruel_prince_availability",
+  "patterns": [
+    "Is The Cruel Prince available?",
+    "Is The Cruel Prince stock?",
+    "Can I buy The Cruel Prince ?",
+    "Do you sell The Cruel Prince?",
+    "The The Cruel Prince "
+  ],
+  "responses": [
+    "The Cruel Prince  is Available in store"
+  ]
+},
+ {
+  "tag": "the_cruel_prince_synopsis",
+  "patterns": [
+    "What is The Cruel Prince  about?",
+    "The Cruel Prince  synopsis?",
+    "what is the The Cruel Prince story?"
+  ],
+  "responses": [
+    "The Cruel Prince : The first book in The Folk of the Airseries  where a mortal girl navigates the treacherous world of the fae. A delightful romance novel about a grad student who teams up with a scientist to prove Love on the Brain."
+  ]
+},
+  {
+  "tag": "the_cruel_prince_promotion",
+  "patterns": [
+    "Does The Cruel Prince have any promotions?",
+    "The Cruel Prince promotions?",
+    "Promotions The Cruel Prince?"
+  ],
+  "responses": [
+    "Current promotion : Free tote bag with books"
+  ]
+},
+{
+  "tag": "the_lost_sisters_price",
+"patterns": [
+    "How much does The Lost Sisters  cost?",
+    "How much is The Lost Sisters ?",
+    "The Lost Sisters price?",
+    "Cost for The Lost Sisters ?"
+  ],
+  "responses": [
+    "The price of The Lost Sisters  is 3500 rupees."
+  ]
+},
+ {
+  "tag": "the_lost_sisters_availability",
+  "patterns": [
+    "Is The Lost Sisters available?",
+    "Is The Lost Sisters stock?",
+    "Can I buy The Lost Sisters ?",
+    "Do you sell The Lost Sisters?",
+    "The The Lost Sisters "
+  ],
+  "responses": [
+    "The Lost Sisters  is Available in store"
+  ]
+},
+ {
+  "tag": "the_lost_sisters_synopsis",
+  "patterns": [
+    "What is The Lost Sisters  about?",
+    "The Lost Sisters  synopsis?",
+    "what is the The Lost Sisters story?"
+  ],
+  "responses": [
+    "The Lost Sisters : A companion novella in The Folk of the Airseries  providing insights into Taryn's perspective. A delightful romance novel about a grad student who teams up with a scientist to prove Love on the Brain."
+  ]
+},
+  {
+  "tag": "the_lost_sisters_promotion",
+  "patterns": [
+    "Does The Lost Sisters have any promotions?",
+    "The Lost Sisters promotions?",
+    "Promotions The Lost Sisters?"
+  ],
+  "responses": [
+    "Current promotion : No promotion"
+  ]
+},
+{
+  "tag": "the_wicked_king_price",
+"patterns": [
+    "How much does The Wicked King  cost?",
+    "How much is The Wicked King ?",
+    "The Wicked King price?",
+    "Cost for The Wicked King ?"
+  ],
+  "responses": [
+    "The price of The Wicked King  is 3500 rupees."
+  ]
+},
+ {
+  "tag": "the_wicked_king_availability",
+  "patterns": [
+    "Is The Wicked King available?",
+    "Is The Wicked King stock?",
+    "Can I buy The Wicked King ?",
+    "Do you sell The Wicked King?",
+    "The The Wicked King "
+  ],
+  "responses": [
+    "The Wicked King  is Available in store"
+  ]
+},
+ {
+  "tag": "the_wicked_king_synopsis",
+  "patterns": [
+    "What is The Wicked King  about?",
+    "The Wicked King  synopsis?",
+    "what is the The Wicked King story?"
+  ],
+  "responses": [
+    "The Wicked King : The thrilling second book in The Folk of the Airseries  with political intrigue and betrayal. A delightful romance novel about a grad student who teams up with a scientist to prove Love on the Brain."
+  ]
+},
+  {
+  "tag": "the_wicked_king_promotion",
+  "patterns": [
+    "Does The Wicked King have any promotions?",
+    "The Wicked King promotions?",
+    "Promotions The Wicked King?"
+  ],
+  "responses": [
+    "Current promotion : No promotion"
+  ]
+},
+{
+  "tag": "how_the_king_of_elfhame_learned_to_hate_price",
+"patterns": [
+    "How much does How the King of Elfhame Learned to Hate  cost?",
+    "How much is How the King of Elfhame Learned to Hate ?",
+    "How the King of Elfhame Learned to Hate price?",
+    "Cost for How the King of Elfhame Learned to Hate ?"
+  ],
+  "responses": [
+    "The price of How the King of Elfhame Learned to Hate  is 3500 rupees."
+  ]
+},
+ {
+  "tag": "how_the_king_of_elfhame_learned_to_hate_availability",
+  "patterns": [
+    "Is How the King of Elfhame Learned to Hate available?",
+    "Is How the King of Elfhame Learned to Hate stock?",
+    "Can I buy How the King of Elfhame Learned to Hate ?",
+    "Do you sell How the King of Elfhame Learned to Hate?",
+    "The How the King of Elfhame Learned to Hate "
+  ],
+  "responses": [
+    "How the King of Elfhame Learned to Hate  is Available in store"
+  ]
+},
+ {
+  "tag": "how_the_king_of_elfhame_learned_to_hate_synopsis",
+  "patterns": [
+    "What is How the King of Elfhame Learned to Hate  about?",
+    "How the King of Elfhame Learned to Hate  synopsis?",
+    "what is the How the King of Elfhame Learned to Hate story?"
+  ],
+  "responses": [
+    "How the King of Elfhame Learned to Hate : A novella in The Folk of the Airseries  exploring the backstory of Cardan. A delightful romance novel about a grad student who teams up with a scientist to prove Love on the Brain."
+  ]
+},
+  {
+  "tag": "how_the_king_of_elfhame_learned_to_hate_promotion",
+  "patterns": [
+    "Does How the King of Elfhame Learned to Hate have any promotions?",
+    "How the King of Elfhame Learned to Hate promotions?",
+    "Promotions How the King of Elfhame Learned to Hate?"
+  ],
+  "responses": [
+    "Current promotion : No promotion"
+  ]
+},
+{
+  "tag": "hush_hush_price",
+"patterns": [
+    "How much does Hush, Hush  cost?",
+    "How much is Hush, Hush ?",
+    "Hush, Hush price?",
+    "Cost for Hush, Hush ?"
+  ],
+  "responses": [
+    "The price of Hush, Hush  is 3800 rupees."
+  ]
+},
+ {
+  "tag": "hush_hush_availability",
+  "patterns": [
+    "Is Hush, Hush available?",
+    "Is Hush, Hush stock?",
+    "Can I buy Hush, Hush ?",
+    "Do you sell Hush, Hush?",
+    "The Hush, Hush "
+  ],
+  "responses": [
+    "Hush, Hush  is Available in store"
+  ]
+},
+ {
+  "tag": "hush_hush_synopsis",
+  "patterns": [
+    "What is Hush, Hush  about?",
+    "Hush, Hush  synopsis?",
+    "what is the Hush, Hush story?"
+  ],
+  "responses": [
+    "Hush, Hush : The first book in the Hush, Hush saga, featuring the enigmatic Patch and a world of fallen angels. A delightful romance novel about a grad student who teams up with a scientist to prove Love on the Brain."
+  ]
+},
+  {
+  "tag": "hush_hush_promotion",
+  "patterns": [
+    "Does Hush, Hush have any promotions?",
+    "Hush, Hush promotions?",
+    "Promotions Hush, Hush?"
+  ],
+  "responses": [
+    "Current promotion : Free tote bag with Books"
+  ]
+},
+{
+  "tag": "crescendo_price",
+"patterns": [
+    "How much does Crescendo  cost?",
+    "How much is Crescendo ?",
+    "Crescendo price?",
+    "Cost for Crescendo ?"
+  ],
+  "responses": [
+    "The price of Crescendo  is 3800 rupees."
+  ]
+},
+ {
+  "tag": "crescendo_availability",
+  "patterns": [
+    "Is Crescendo available?",
+    "Is Crescendo stock?",
+    "Can I buy Crescendo ?",
+    "Do you sell Crescendo?",
+    "The Crescendo "
+  ],
+  "responses": [
+    "Crescendo  is Available in store"
+  ]
+},
+ {
+  "tag": "crescendo_synopsis",
+  "patterns": [
+    "What is Crescendo  about?",
+    "Crescendo  synopsis?",
+    "what is the Crescendo story?"
+  ],
+  "responses": [
+    "Crescendo : The second book in the Hush, Hush saga with secrets and challenges in Nora's life. A delightful romance novel about a grad student who teams up with a scientist to prove Love on the Brain."
+  ]
+},
+  {
+  "tag": "crescendo_promotion",
+  "patterns": [
+    "Does Crescendo have any promotions?",
+    "Crescendo promotions?",
+    "Promotions Crescendo?"
+  ],
+  "responses": [
+    "Current promotion : Free tote bag with Books"
+  ]
+},
+{
+  "tag": "silence_price",
+"patterns": [
+    "How much does Silence  cost?",
+    "How much is Silence ?",
+    "Silence price?",
+    "Cost for Silence ?"
+  ],
+  "responses": [
+    "The price of Silence  is 3800 rupees."
+  ]
+},
+ {
+  "tag": "silence_availability",
+  "patterns": [
+    "Is Silence available?",
+    "Is Silence stock?",
+    "Can I buy Silence ?",
+    "Do you sell Silence?",
+    "The Silence "
+  ],
+  "responses": [
+    "Silence  is Available in store"
+  ]
+},
+ {
+  "tag": "silence_synopsis",
+  "patterns": [
+    "What is Silence  about?",
+    "Silence  synopsis?",
+    "what is the Silence story?"
+  ],
+  "responses": [
+    "Silence : The third book in the Hush, Hush saga  where Nora struggles with memory loss and dark forces. A delightful romance novel about a grad student who teams up with a scientist to prove Love on the Brain."
+  ]
+},
+  {
+  "tag": "silence_promotion",
+  "patterns": [
+    "Does Silence have any promotions?",
+    "Silence promotions?",
+    "Promotions Silence?"
+  ],
+  "responses": [
+    "Current promotion : Free tote bag with Books"
+  ]
+},
+{
+  "tag": "finale_price",
+"patterns": [
+    "How much does Finale  cost?",
+    "How much is Finale ?",
+    "Finale price?",
+    "Cost for Finale ?"
+  ],
+  "responses": [
+    "The price of Finale  is 3800 rupees."
+  ]
+},
+ {
+  "tag": "finale_availability",
+  "patterns": [
+    "Is Finale available?",
+    "Is Finale stock?",
+    "Can I buy Finale ?",
+    "Do you sell Finale?",
+    "The Finale "
+  ],
+  "responses": [
+    "Finale  is Available in store"
+  ]
+},
+ {
+  "tag": "finale_synopsis",
+  "patterns": [
+    "What is Finale  about?",
+    "Finale  synopsis?",
+    "what is the Finale story?"
+  ],
+  "responses": [
+    "Finale : The thrilling conclusion to the Hush, Hush saga  with epic battles and ultimate choices. A delightful romance novel about a grad student who teams up with a scientist to prove Love on the Brain."
+  ]
+},
+  {
+  "tag": "finale_promotion",
+  "patterns": [
+    "Does Finale have any promotions?",
+    "Finale promotions?",
+    "Promotions Finale?"
+  ],
+  "responses": [
+    "Current promotion : Free tote bag with Books"
+  ]
+},
+    {
+  "tag": "unavailable_books",
+  "patterns": [
+    "Is Ugly Love By Colleen Hover available?",
+    "Do you have The edge of everything?",
+    "I'm looking for Fine Print By Lauren Asher, is it Available?",
+    "Does the shop sell Air head?",
+    "Does the shop sell any Meg Cabot books?"
+  ],
+  "responses": [
+    "I'm sorry, The book is currently unavailable.",
+    "Unfortunately, we don't have the available at the moment.",
+    "I regret to inform you that the book is not  available in the shop.",
+    "I'm afraid the book is temporarily unavailable. Would you like to explore other options?",
+    "I'm sorry, the Book is not available . Can I assist you with something else?"
+  ]
+},
+
+    {
+  "tag": "fantasy_genre",
+  "patterns": [
+    "What books are in fantasy genre ?",
+    "Give me some fantasy books to read.",
+    "Recommend fantasy novels.",
+    "I'm looking for fantasy genre books.",
+    "Can you suggest fantasy literature?",
+    "What are some popular fantasy books?"
+
+  ],
+  "responses": [
+    "Harry Potter and the Sorcerer's Stone\nHarry Potter and the Chamber of Secrets\nHarry Potter and the Prisoner of Azkaban\nHarry Potter and the Goblet of Fire\nHarry Potter and the Order of the Phoenix\nHarry Potter and the Half-Blood Prince\nHarry Potter and the Deathly Hallows\nClockwork Angel\nClockwork Prince\nClockwork Princess\nLady Midnight\nLord of Shadows\nQueen of Air and Darkness\nThe Cruel Prince\nThe Lost Sisters\nThe Wicked King\nHow the King of Elfhame Learned to Hate\n"
+  ]
+},
+
+        {
+  "tag": "fiction_genre",
+"patterns": [
+    "Recommend some good fiction books.",
+    "What are some popular fiction novels?",
+    "I'm in the mood for a fiction book. Any suggestions?",
+    "Tell me about some great works of fiction."
+],
+  "responses": [
+    "Pride and Prejudice\nLittle Women\nAnne of Green Gables\nClockwork Angel\nClockwork Prince\nClockwork Princess\nLady Midnight\nLord of Shadows\nQueen of Air and Darkness\nThe Cruel Prince\nThe Lost Sisters\nThe Wicked King\nHow the King of Elfhame Learned to Hate\nThe Seven Husbands of Evelyn Hugo\nThe Song of Achilles\nCirce\nHush, Hush\nCrescendo\nSilence\nFinale\nOne Last Stop\nThe Spanish Love Deception\nThe Love Hypothesis\nLove on the Brain\nIt Ends with Us\nIt Starts with Us\nThe Secret Garden\nCall Me by Your Name\nRed White & Royal Blue\nReminders of Him\n"
+  ]
+},
+
+
+        {
+  "tag": "young_adult_genre",
+"patterns": [
+    "Can you recommend young adult books?",
+    "What are some popular young adult novels?",
+    "I'm looking for young adult fiction. Any recommendations?",
+    "Tell me about some great young adult literature."
+],
+  "responses": [
+    "Harry Potter and the Sorcerer's Stone\nHarry Potter and the Chamber of Secrets\nHarry Potter and the Prisoner of Azkaban\nHarry Potter and the Goblet of Fire\nHarry Potter and the Order of the Phoenix\nHarry Potter and the Half-Blood Prince\nHarry Potter and the Deathly Hallows\n"
+  ]
+},
+
+
+        {
+  "tag": "romance_genre",
+"patterns": [
+    "Recommend some romance novels.",
+    "What are some popular romance books?",
+    "I'm in the mood for a romance novel. Any suggestions?",
+    "Tell me about some great romance literature."
+]
+,
+  "responses": [
+     "Pride and Prejudice\nOne Last Stop\nThe Spanish Love Deception\nThe Love Hypothesis\nLove on the Brain\nIt Ends with Us\nIt Starts with Us\nCall Me by Your Name\nRed White & Royal Blue\nReminders of Him\n"
+  ]
+},
+
+
+        {
+"tag": "classics_genre",
+"patterns": [
+    "Recommend classic literature.",
+    "What are some classic novels?",
+    "I'm looking for classic literature. Any recommendations?",
+    "Tell me about some great classics."
+]
+,
+  "responses": [
+    "Little Women\nAnne of Green Gables\n"
+  ]
+},
+
+
+        {
+  "tag": "historical_fiction_genre",
+"patterns": [
+    "Recommend some historical fiction books.",
+    "What are some popular historical fiction novels?",
+    "I'm in the mood for historical fiction. Any suggestions?",
+    "Tell me about some great historical fiction literature."
+]
+,
+  "responses": [
+    "The Seven Husbands of Evelyn Hugo\nThe Song of Achilles\n"
+  ]
+},
+           {
+"tag": "graphic_novels_genre",
+"patterns": [
+    "Recommend some graphic novels.",
+    "What are some popular graphic novels?",
+    "I'm in the mood for a graphic novel. Any suggestions?",
+    "Tell me about some great graphic novels."
+]
+
+,
+  "responses": [
+    "Heartstopper Volume 1\nHeartstopper Volume 2\nHeartstopper Volume 3\nHeartstopper Volume 4\nHeartstopper Volume 5\n"
+  ]
+},
+               {
+"tag": "lgbtq_genre",
+"patterns": [
+    "Recommend LGBTQ+ literature.",
+    "What are some popular LGBTQ+ books?",
+    "I'm looking for LGBTQ+ fiction. Any recommendations?",
+    "Tell me about some great LGBTQ+ literature."
+]
+
+,
+  "responses": [
+    "Heartstopper Volume 1\nHeartstopper Volume 2\nHeartstopper Volume 3\nHeartstopper Volume 4\nHeartstopper Volume 5\n"
+  ]
+},
+               {
+"tag": "childrens_genre",
+"patterns": [
+    "Recommend children's books.",
+    "What are some popular children's novels?",
+    "I'm in the mood for a children's book. Any suggestions?",
+    "Tell me about some great children's literature."
+]
+
+,
+  "responses": [
+    "The Secret Garden\n"
+  ]
+},
+
+              {
+"tag": "mythology_genre",
+"patterns": [
+    "Recommend mythology books.",
+    "What are some popular mythology novels?",
+    "I'm looking for books on mythology. Any recommendations?",
+    "Tell me about some great mythology literature."
+]
+
+
+,
+  "responses": [
+    "Circe\n"
+  ]
+},
+{
+"tag": "paranormal_romance_genre",
+"patterns": [
+    "Recommend paranormal romance novels.",
+    "What are some popular paranormal romance books?",
+    "I'm in the mood for a paranormal romance novel. Any suggestions?",
+    "Tell me about some great paranormal romance literature."
+]
+
+
+,
+  "responses": [
+    "Circe\nHush, Hush\nCrescendo\nSilence\nFinale\n"
+  ]
+},
+    {
+"tag": "ali_hazelwood_author",
+"patterns": [
+    "Tell me about books by Ali Hazelwood.",
+    "Recommend books by Ali Hazelwood.",
+    "I'm a fan of Ali Hazelwood. What should I read next by this author?",
+    "What are some works by Ali Hazelwood?"
+]
+
+
+
+,
+  "responses": [
+    "The Love Hypothesis\nLove on the Brain\n"
+  ]
+},
+    {
+"tag": "alice_oseman_author",
+"patterns": [
+    "Tell me about books by Alice Oseman.",
+    "Recommend books by Alice Oseman.",
+    "I enjoy Alice Oseman's writing. What should I read next by this author?",
+    "What are some works by Alice Oseman?"
+]
+
+
+
+,
+  "responses": [
+    "Heartstopper Volume 1\nHeartstopper Volume 2\nHeartstopper Volume 3\nHeartstopper Volume 4\nHeartstopper Volume 5\n"
+  ]
+},
+    {
+"tag": "andre_aciman_author",
+"patterns": [
+    "Tell me about books by André Aciman.",
+    "Recommend books by André Aciman.",
+    "I'm interested in André Aciman's works. What should I read by this author?",
+    "What are some works by André Aciman?"
+]
+
+
+
+,
+  "responses": [
+    "Call Me by Your Name\n"
+  ]
+},{
+"tag": "becca_fitzpatrick_author",
+"patterns": [
+    "Tell me about books by Becca Fitzpatrick.",
+    "Recommend books by Becca Fitzpatrick.",
+    "I'm a fan of Becca Fitzpatrick. What should I read next by this author?",
+    "What are some works by Becca Fitzpatrick?"
+]
+
+
+
+,
+  "responses": [
+    "Hush, Hush\nCrescendo\nSilence\nFinale\n"
+  ]
+},{
+"tag": "cassandra_clare_author",
+"patterns": [
+    "Tell me about books by Cassandra Clare.",
+    "Recommend books by Cassandra Clare.",
+    "I'm a fan of Cassandra Clare. What should I read next by this author?",
+    "What are some works by Cassandra Clare?"
+]
+
+
+
+,
+  "responses": [
+    "Clockwork Angel\nClockwork Prince\nClockwork Princess\nLady Midnight\nLord of Shadows\nQueen of Air and Darkness\n"
+  ]
+},{
+"tag": "casey_mcquiston_author",
+"patterns": [
+    "Tell me about books by Casey McQuiston.",
+    "Recommend books by Casey McQuiston.",
+    "I enjoy Casey McQuiston's writing. What should I read next by this author?",
+    "What are some works by Casey McQuiston?"
+]
+
+
+
+,
+  "responses": [
+    "One Last Stop\nRed White & Royal Blue\n"
+  ]
+},{
+"tag": "colleen_hoover_author",
+"patterns": [
+    "Tell me about books by Colleen Hoover.",
+    "Recommend books by Colleen Hoover.",
+    "I enjoy Colleen Hoover's writing. What should I read next by this author?",
+    "What are some works by Colleen Hoover?"
+]
+
+
+
+,
+  "responses": [
+    "It Ends with Us\nIt Starts with Us\nReminders of Him\n"
+  ]
+},{
+"tag": "elena_armas_author",
+"patterns": [
+    "Tell me about books by Elena Armas.",
+    "Recommend books by Elena Armas.",
+    "I'm interested in Elena Armas' works. What should I read by this author?",
+    "What are some works by Elena Armas?"
+]
+,
+  "responses": [
+    "The Spanish Love Deception\n"
+  ]
+},{
+"tag": "frances_hodgson_burnett_author",
+"patterns": [
+    "Tell me about books by Frances Hodgson Burnett.",
+    "Recommend books by Frances Hodgson Burnett.",
+    "I enjoy Frances Hodgson Burnett's writing. What should I read next by this author?",
+    "What are some works by Frances Hodgson Burnett?"
+]
+,
+  "responses": [
+    "The Secret Garden\n"
+  ]
+},{
+"tag": "holly_black_author",
+"patterns": [
+    "Tell me about books by Holly Black.",
+    "Recommend books by Holly Black.",
+    "I'm a fan of Holly Black. What should I read next by this author?",
+    "What are some works by Holly Black?"
+]
+
+,
+  "responses": [
+    "The Cruel Prince\nThe Lost Sisters\nThe Wicked King\nHow the King of Elfhame Learned to Hate\n"
+  ]
+},
+    {
+"tag": "jk_rowling_author",
+"patterns": [
+    "Tell me about books by J.K. Rowling.",
+    "Recommend books by J.K. Rowling.",
+    "I enjoy J.K. Rowling's writing. What should I read next by this author?",
+    "What are some works by J.K. Rowling?"
+]
+,
+  "responses": [
+    "Harry Potter and the Sorcerer's Stone\nHarry Potter and the Chamber of Secrets\nHarry Potter and the Prisoner of Azkaban\nHarry Potter and the Goblet of Fire\nHarry Potter and the Order of the Phoenix\nHarry Potter and the Half-Blood Prince\nHarry Potter and the Deathly Hallows\n"
+  ]
+},
+    {
+"tag": "jane_austen_author",
+"patterns": [
+    "Tell me about books by Jane Austen.",
+    "Recommend books by Jane Austen.",
+    "I'm a fan of Jane Austen. What should I read next by this author?",
+    "What are some works by Jane Austen?"
+]
+,
+  "responses": [
+    "Pride and Prejudice\n"
+  ]
+},
+    {
+"tag": "lm_montgomery_author",
+"patterns": [
+    "Tell me about books by L. M. Montgomery.",
+    "Recommend books by L. M. Montgomery.",
+    "I enjoy L. M. Montgomery's writing. What should I read next by this author?",
+    "What are some works by L. M. Montgomery?"
+],
+  "responses": [
+    "Anne of Green Gables\n"
+  ]
+},
+    {
+"tag": "louisa_may_alcott_author",
+"patterns": [
+    "Tell me about books by Louisa May Alcott.",
+    "Recommend books by Louisa May Alcott.",
+    "I'm a fan of Louisa May Alcott. What should I read next by this author?",
+    "What are some works by Louisa May Alcott?"
+]
+,
+  "responses": [
+    "Little Women\n"
+  ]
+},
+    {
+"tag": "madeline_miller_author",
+"patterns": [
+    "Tell me about books by Madeline Miller.",
+    "Recommend books by Madeline Miller.",
+    "I enjoy Madeline Miller's writing. What should I read next by this author?",
+    "What are some works by Madeline Miller?"
+]
+,
+  "responses": [
+    "The Song of Achilles\nCirce\n"
+  ]
+},
+    {
+"tag": "taylor_jenkins_reid_author",
+"patterns": [
+    "Tell me about books by Taylor Jenkins Reid.",
+    "Recommend books by Taylor Jenkins Reid.",
+    "I'm a fan of Taylor Jenkins Reid. What should I read next by this author?",
+    "What are some works by Taylor Jenkins Reid?"
+]
+,
+  "responses": [
+    "The Seven Husbands of Evelyn Hugo\n"
+  ]
+},
+{
+  "tag": "the_whispers_price",
+  "patterns": ["How much does The Whispers cost?", "How much is The Whispers?", "The Whispers price?", "Cost for The Whispers?"],
+  "responses": ["The price of The Whispers is Rs.3000."]
+},
+{
+  "tag": "the_whispers_availability",
+  "patterns": ["Is The Whispers available?", "Is The Whispers in stock?", "Can I buy The Whispers?", "Do you sell The Whispers?", "The Whispers."],
+  "responses": ["The Whispers is available in store."]
+},
+{
+  "tag": "the_whispers_synopsis",
+  "patterns": ["What is The Whispers about?", "The Whispers synopsis?", "What is The Whispers story?"],
+  "responses": ["The Whispers: The Whispers\" is a thrilling novel filled with mystery and suspense. It explores the story of a family living in a haunted house, and the eerie events that unfold as they uncover the secrets hidden within its walls."]
+},
+    {
+  "tag": "the_whispers_promotion",
+  "patterns": ["Does The Whispers have any promotions?", "The Whispers promotions?", "Promotions for The Whispers?"],
+  "responses": ["Current promotion: No promotion"]
+},
+
+    {
+  "tag": "blind_side_of_business_synopsis",
+  "patterns": ["What is The Blind Side of Business about?", "The Blind Side of Business synopsis?", "What is The Blind Side of Business story?"],
+  "responses": ["The Blind Side of Business:  delves into the lesser-known aspects of the business world. It offers a fresh perspective on the challenges and opportunities faced by businesses, shedding light on areas often overlooked."]
+},
+    {
+  "tag": "blind_side_of_business_price",
+  "patterns": ["How much does The Blind Side of Business cost?", "How much is The Blind Side of Business?", "The Blind Side of Business price?", "Cost for The Blind Side of Business?"],
+  "responses": ["The price of The Blind Side of Business is Rs.3000."]
+},
+    {
+  "tag": "zero_to_one_price",
+  "patterns": ["How much does Zero to One cost?", "How much is Zero to One?", "Zero to One price?", "Cost for Zero to One?"],
+  "responses": ["The price of Zero to One is Rs.3500."]
+},
+
+    {
+  "tag": "zero_to_one_availability",
+  "patterns": ["Is Zero to One available?", "Is Zero to One in stock?", "Can I buy Zero to One?", "Do you sell Zero to One?", "Zero to One."],
+  "responses": ["Zero to One is available in store."]
+},
+
+    {
+  "tag": "zero_to_one_synopsis",
+  "patterns": ["What is Zero to One about?", "Zero to One synopsis?", "What is Zero to One story?"],
+  "responses": ["Zero to One: \"Zero to One\" by Peter Thiel is a book on startups and entrepreneurship. It offers valuable insights on how to build a successful tech company from scratch, emphasizing the importance of innovation and creating a unique and valuable product"]
+},
+
+{
+  "tag": "zero_to_one_promotion",
+  "patterns": ["Does Zero to One have any promotions?", "Zero to One promotions?", "Promotions for Zero to One?"],
+  "responses": ["Current promotion: 50% off"]
+},
+
+  {
+  "tag": "blind_side_of_business_availability",
+  "patterns": ["Is The Blind Side of Business available?", "Is The Blind Side of Business in stock?", "Can I buy The Blind Side of Business?", "Do you sell The Blind Side of Business?", "The Blind Side of Business."],
+  "responses": ["The Blind Side of Business is available in store."]
+},
+
+    {
+  "tag": "blind_side_of_business_promotion",
+  "patterns": ["Does The Blind Side of Business have any promotions?", "The Blind Side of Business promotions?", "Promotions for The Blind Side of Business?"],
+  "responses": ["Current promotion: No promotion"]
+},
+
+    {
+  "tag": "rich_dad_poor_dad_price",
+  "patterns": ["How much does Rich Dad Poor Dad cost?", "How much is Rich Dad Poor Dad?", "Rich Dad Poor Dad price?", "Cost for Rich Dad Poor Dad?"],
+  "responses": ["The price of Rich Dad Poor Dad is Rs.2000."]
+},
+
+    {
+  "tag": "rich_dad_poor_dad_availability",
+  "patterns": ["Is Rich Dad Poor Dad available?", "Is Rich Dad Poor Dad in stock?", "Can I buy Rich Dad Poor Dad?", "Do you sell Rich Dad Poor Dad?", "Rich Dad Poor Dad."],
+  "responses": ["Rich Dad Poor Dad is available in store."]
+},
+
+    {
+  "tag": "rich_dad_poor_dad_synopsis",
+  "patterns": ["What is Rich Dad Poor Dad about?", "Rich Dad Poor Dad synopsis?", "What is Rich Dad Poor Dad story?"],
+  "responses": ["Rich Dad Poor Dad: \"Rich Dad Poor Dad\" by Robert Kiyosaki is a personal finance classic that explores the differences in mindset and financial strategies between the author's \"rich dad\" and \"poor dad.\" It offers valuable lessons on building wealth and financial literacy"]
+},
+
+    {
+  "tag": "rich_dad_poor_dad_promotion",
+  "patterns": ["Does Rich Dad Poor Dad have any promotions?", "Rich Dad Poor Dad promotions?", "Promotions for Rich Dad Poor Dad?"],
+  "responses": ["Current promotion: No promotion"]
+},
+ {
+  "tag": "the_first_90_days_price",
+  "patterns": ["How much does The First 90 Days cost?", "How much is The First 90 Days?", "The First 90 Days price?", "Cost for The First 90 Days?"],
+  "responses": ["The price of The First 90 Days is Rs.2000."]
+},
+{
+  "tag": "the_first_90_days_availability",
+  "patterns": ["Is The First 90 Days available?", "Is The First 90 Days in stock?", "Can I buy The First 90 Days?", "Do you sell The First 90 Days?", "The First 90 Days."],
+  "responses": ["The First 90 Days is available in store."]
+}
+,
+{
+  "tag": "the_first_90_days_synopsis",
+  "patterns": ["What is The First 90 Days about?", "The First 90 Days synopsis?", "What is The First 90 Days story?"],
+  "responses": ["The First 90 Days: \"The First 90 Days\" by Michael D. Watkins is a guide for individuals taking on new leadership roles. It provides a framework for successfully transitioning into a new job or position and making a positive impact within the first 90 days"]
+},
+    {
+  "tag": "the_first_90_days_promotion",
+  "patterns": ["Does The First 90 Days have any promotions?", "The First 90 Days promotions?", "Promotions for The First 90 Days?"],
+  "responses": ["Current promotion: No promotion"]
+}
+,{
+  "tag": "bad_blood_price",
+  "patterns": ["How much does Bad Blood cost?", "How much is Bad Blood?", "Bad Blood price?", "Cost for Bad Blood?"],
+  "responses": ["The price of Bad Blood is 4000."]
+}
+,{
+  "tag": "bad_blood_availability",
+  "patterns": ["Is Bad Blood available?", "Is Bad Blood in stock?", "Can I buy Bad Blood?", "Do you sell Bad Blood?", "Bad Blood."],
+  "responses": ["Bad Blood is available in store."]
+}
+,{
+  "tag": "bad_blood_synopsis",
+  "patterns": ["What is Bad Blood about?", "Bad Blood synopsis?", "What is Bad Blood story?"],
+  "responses": ["Bad Blood: \"Bad Blood\" by John Carreyrou is a gripping exposé of the rise and fall of Theranos, a biotech startup that promised revolutionary blood testing technology but ultimately faced allegations of fraud. The book unveils the shocking deception that led to its downfall."]
+}
+,{
+  "tag": "bad_blood_promotion",
+  "patterns": ["Does Bad Blood have any promotions?", "Bad Blood promotions?", "Promotions for Bad Blood?"],
+  "responses": ["Current promotion: 50% off"]
+},
+    {
+  "tag": "future_technology_price",
+  "patterns": ["How much does Future Technology cost?", "How much is Future Technology?", "Future Technology price?", "Cost for Future Technology?"],
+  "responses": ["The price of Future Technology is Rs.2000."]
+}
+,{
+  "tag": "future_technology_availability",
+  "patterns": ["Is Future Technology available?", "Is Future Technology in stock?", "Can I buy Future Technology?", "Do you sell Future Technology?", "Future Technology."],
+  "responses": ["Future Technology is available in store."]
+},
+    {
+  "tag": "future_technology_synopsis",
+  "patterns": ["What is Future Technology about?", "Future Technology synopsis?", "What is Future Technology story?"],
+  "responses": ["Future Technology: \"Future Technology\" explores the latest advancements and innovations in the world of technology. It covers topics such as artificial intelligence, robotics, and emerging technologies, offering insights into the future of our digital world"]
+},
+   {
+  "tag": "future_technology_promotion",
+  "patterns": ["Does Future Technology have any promotions?", "Future Technology promotions?", "Promotions for Future Technology?"],
+  "responses": ["Current promotion:No promotion"]
+}
+,{
+  "tag": "the_age_of_ai_price",
+  "patterns": ["How much does The Age of AI cost?", "How much is The Age of AI?", "The Age of AI price?", "Cost for The Age of AI?"],
+  "responses": ["The price of The Age of AI is Rs.4000."]
+}
+,{
+  "tag": "the_age_of_ai_availability",
+  "patterns": ["Is The Age of AI available?", "Is The Age of AI in stock?", "Can I buy The Age of AI?", "Do you sell The Age of AI?", "The Age of AI."],
+  "responses": ["The Age of AI is available in store."]
+}
+,{
+  "tag": "the_age_of_ai_synopsis",
+  "patterns": ["What is The Age of AI about?", "The Age of AI synopsis?", "What is The Age of AI story?"],
+  "responses": ["The Age of AI: \"The Age of AI\" is a thought-provoking exploration of the impact of artificial intelligence on society, businesses, and everyday life. It delves into the ethical and practical implications of AI and its role in shaping the future."]
+}
+,{
+  "tag": "the_age_of_ai_promotion",
+  "patterns": ["Does The Age of AI have any promotions?", "The Age of AI promotions?", "Promotions for The Age of AI?"],
+  "responses": ["Current promotion: No promotion"]
+}
+,{
+  "tag": "steve_jobs_price",
+  "patterns": ["How much does Steve Jobs cost?", "How much is Steve Jobs?", "Steve Jobs price?", "Cost for Steve Jobs?"],
+  "responses": ["The price of Steve Jobs is 3000."]
+}
+,{
+  "tag": "steve_jobs_availability",
+  "patterns": ["Is Steve Jobs available?", "Is Steve Jobs in stock?", "Can I buy Steve Jobs?", "Do you sell Steve Jobs?", "Steve Jobs."],
+  "responses": ["Steve Jobs is available in store."]
+}
+,{
+  "tag": "steve_jobs_availability",
+  "patterns": ["Is Steve Jobs available?", "Is Steve Jobs in stock?", "Can I buy Steve Jobs?", "Do you sell Steve Jobs?", "Steve Jobs."],
+  "responses": ["Steve Jobs is available in store."]
+},
+    {
+  "tag": "steve_jobs_synopsis",
+  "patterns": ["What is Steve Jobs about?", "Steve Jobs synopsis?", "What is Steve Jobs story?"],
+  "responses": ["Steve Jobs: \"Steve Jobs\" is a biography of the iconic co-founder of Apple Inc., Steve Jobs. It offers an in-depth look at his life, career, and the innovative products he helped create, providing a glimpse into the mind of a visionary entrepreneur."]
+},
+      {
+  "tag": "featured_books_popular",
+  "patterns": ["What are the popular books?", "Popular books?"],
+  "responses": ["HeartStopper volume 1\nThe cruel prince\n little women \niT starts with us\n wicked king\n silence \n It ends with us\n The secret garden"]
+},
+       {
+  "tag": "featured_books_bestselling",
+  "patterns": ["What is the best selling book", "best seller?"],
+  "responses": ["The Whisphers by Ashley Audrain"]
+},
+    {
+  "tag": "steve_jobs_promotion",
+  "patterns": ["Does Steve Jobs have any promotions?", "Steve Jobs promotions?", "Promotions for Steve Jobs?"],
+  "responses": ["Current promotion: No promotion"]
+}
+
+,{
+  "tag": "great_travel_at_dessert_availability",
+  "patterns": ["Is Great at travel available?", "Is Great at travel in stock?", "Can I buy Great at travel?", "Do you sell Great at travel?", "Great at travel."],
+  "responses": ["Great at travel is not available in store."]
+}, {
+  "tag": "once_upon_a_time_availability",
+  "patterns": ["Is Once upon A time available?", "Is Once upon A time in stock?", "Can I buy Once upon A time?", "Do you sell Once upon A time?", "Once upon A time."],
+  "responses": ["Once upon A time is not available in store."]
+}
+
+
+
+  ]
+}
+
+
+
+
+
